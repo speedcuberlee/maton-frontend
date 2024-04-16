@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Archive.org</title>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
+	<link rel="icon" type="image/x-icon" href="images/archive-org.svg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+	<header>
+		<nav class="user-navbar">
+			<ul>
+
+				<li><a href="">Internet Archive</a></li>
+				<li><a href="">Sign up</a></li>
+				<li><a href="">Login</a></li>
+				<li><a href="">Upload</a></li>
+			</ul>
+		</nav>
+
+		<nav class="main-navbar">
+			<ul>
+				<li><a href="">Web</a></li>
+				<li><a href="">Books</a></li>
+				<li><a href="">Video</a></li>
+				<li><a href="">Audio</a></li>
+				<li><a href="">Software</a></li>
+				<li><a href="">Images</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section>
+		<div class="search-bar">
+			<div class="row">
+				<input id="input-box" type="text" placeholder="Search the history of websites" value=""
+					autocomplete="off">
+				<button>
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
+			</div>
+			<div class="result-box" id="tableone">
+			</div>
+
+		</div>
+		<h2 onclick="makeGet()"> WAYBACK MACHINE</h2>
+
+	</section>
+	<h1>A Message from Internet Archive Founder, Brewster Kahle</h1>
+	<hr>
+	<div id="primary-image">
+        <figure>
+          <img lazy="" src="https://archive.org/offshoot_assets/assets/brewster_kahle.8980cd39cce031cb9fbdf9d345b3d042.jpg" alt="Brewster Kahle">
+          <figcaption>Brewster Kahle, Founder &amp; Digital Librarian</figcaption>
+        </figure>
+      </div>
+	  <p>
+		Dear Patron,
+	  </p>
+	  <p>For more than two and a half decades, we have collected, preserved, and shared our digital cultural artifacts. Thanks to the generosity of our patrons, the Internet Archive has grown from a small preservation project into a vast library that serves millions of people each year. Our work has impacted the lives of so many of our users who value free and open access to information.</p>
+	  <p>From the beginning, it was important for the Internet Archive to be a nonprofit, because it was working for the people. Its motives had to be transparent; it had to last a long time. That's why we don't charge for access, sell user data, or run ads, even while we offer free resources to citizens everywhere. We rely on the generosity of individuals like you to pay for servers, staff, and preservation projects.</p>
+	  <p>If you can't imagine a future without the Internet Archive, please consider supporting our work. We promise to put your donation to good use as we continue to store over 99 petabytes of data, including 625 billion webpages, 38 million books and texts, and 14 million audio recordings.</p>
+	  <p>If you find our site useful, please chip in! Your support will help us build the web we deserve.</p>
+	  <p>Thank you for joining me.</p>
+	  <p>
+		<i>Brewster Kahle<br>
+		  Founder &amp; Digital Librarian
+		</i>
+	  </p>
+	  <p class="tax-info">
+        Please make a tax-deductible donation now.<br>You will receive
+            an email confirmation that can be used for your tax records.<br>The
+            Internet Archive is a California non-profit charity that is
+            tax-exempt under section 501c3 of the Internal Revenue Code. Federal
+            Tax ID Number 94-3242767.
+      </p>
+	  <div class="content-container">
+		<div class="donation-form-container">
+		  <slot name="donation-form-slot"></slot>
+		</div>
+
+		<div class="crypto-donate">
+		  <p class="or-separator">
+			<span>or</span>
+		  </p>
+
+		  <cryptocurrency-button></cryptocurrency-button>
+
+		  <p>
+			Questions? Visit our
+				<a href="https://help.archive.org/help/category/donations-2/">Donation FAQs</a>.
+		  </p>
+		</div>
+
+		<div class="other-methods">
+		  <h2>Other ways to donate</h2>
+		  <p>
+			<strong>Mail your donation to:</strong><br>
+			Internet Archive<br>
+			C/O Philanthropy Department<br>
+			300 Funston Avenue<br>
+			San Francisco, CA&nbsp;&nbsp;94118-2116<br>
+		  </p>
+		  <p>
+			In order to ensure you receive an acknowledgement of your gift
+			as quickly as possible, please include an email address with
+			your mailed donation.
+		  </p>
+		  <p>
+			We regret that we cannot accept cash or check donations in
+			currencies other than USD.
+		  </p>
+		  <p>
+			<strong>Stock or Wire Transfer:</strong><br>
+			If you would like to make a stock or wire transfer gift,
+				please contact us at
+				<a href="mailto:donations@archive.org">donations@archive.org</a>
+		  </p>
+		</div>
+		<div class="donor-emails">
+		  By donating, you will receive occasional donor-related
+			emails from the Internet Archive. We do not sell or trade your
+			information with anyone. You can unsubscribe at any time.
+		</div>
+	  </div>
+
+
+	<footer>
+		<ul>
+			<li><a href="">About</a></li>
+			<li><a href="">Blog</a></li>
+			<li><a href="">Projects</a></li>
+			<li><a href="">Help</a></li>
+			<li><a href="">Donate</a></li>
+			<li><a href="">Contact</a></li>
+			<li><a href="">Jobs</a></li>
+			<li><a href="">Volunteer</a></li>
+			<li><a href="">People</a></li>
+		</ul>
+	</footer>
+</body>
+<script>
+	//     function makeGet(){
+	//       fetch('https://archive.org/wayback/available?url=google.com')
+	// .then(result => result.json())
+	// .then(data => {
+	//     let row = `<tr><th>Url</th><th>Archived snapshot</th><th>Timestamp</th></tr>`;
+	//         row += `<tr><td>${data.url}</td>
+	//             <td>${data.archived_snapshots.closest.url}</td>
+	//             <td>${data.archived_snapshots.closest.timestamp}</td>
+	//             </tr>`;
+	//     document.getElementById('tableone').innerHTML = row;
+	// console.log(data)})
+	// .catch(error => console.log('Error'))  
+	//     }
+	var inputBox = document.getElementById("input-box");
+	inputBox.onkeyup = function () {
+		var input = inputBox.value;
+		if (input.length != 0) {
+			fetch('/__wb/search/host?q=' + input)
+				.then(result => result.json())
+				.then(data => {
+					if (data.hosts.length != 0) {
+						let row = '';
+						for (i = 0; i < data.hosts.length; i++) {
+							displayName = data.hosts[i].display_name;
+							row += `<li>${displayName}</li>`;
+							document.getElementById('tableone').innerHTML = row;
+						}
+						document.getElementById('tableone').innerHTML = `<ul>${row}</ul>`;
+						console.log(data)
+					}
+					else {
+						// document.getElementById('tableone').innerHTML = `<ul><li>${input}</li></ul>`;
+						document.getElementById('tableone').innerHTML = ``;
+					}
+				})
+				.catch(error => console.log(error))
+		} else {
+			document.getElementById('tableone').innerHTML = '';
+		}
+	}
+
+
+
+
+
+
+</script>
+
+</html>

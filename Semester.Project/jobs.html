@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Archive.org</title>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
+	<link rel="icon" type="image/x-icon" href="images/archive-org.svg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+	<header>
+		<nav class="user-navbar">
+			<ul>
+
+				<li><a href="">Internet Archive</a></li>
+				<li><a href="">Sign up</a></li>
+				<li><a href="">Login</a></li>
+				<li><a href="">Upload</a></li>
+			</ul>
+		</nav>
+
+		<nav class="main-navbar">
+			<ul>
+				<li><a href="">Web</a></li>
+				<li><a href="">Books</a></li>
+				<li><a href="">Video</a></li>
+				<li><a href="">Audio</a></li>
+				<li><a href="">Software</a></li>
+				<li><a href="">Images</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section>
+		<div class="search-bar">
+			<div class="row">
+				<input id="input-box" type="text" placeholder="Search the history of websites" value=""
+					autocomplete="off">
+				<button>
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
+			</div>
+			<div class="result-box" id="tableone">
+			</div>
+
+		</div>
+		<h2 onclick="makeGet()"> WAYBACK MACHINE</h2>
+
+	</section>
+	<h1>Job Opportunities at the Internet Archive</h1>
+	<p>The Internet Archive is a non-profit with a huge mission: "Universal Access to All Knowledge". Based in San Francisco, CA, with satellites around the world, Internet Archive staffers are building the digital library of the future - a place where anyone can go to learn and explore our shared human experience from books, web pages, audio, television and software. Forever.</p>
+	<div id="jobs" class="container">
+		<h1>Our Current Job Openings</h1>
+		<p>Thank you for visiting <strong>our</strong> job board.
+		   Please click on a job title to view the requirements for that particular job.
+		   You can apply directly from within the job ad.</p>
+		<ul id="jobs-list">
+		  <li class="form-group">
+			
+	  <a target="_blank" href="https://app.trinethire.com/companies/32967-internet-archive/jobs/91055-senior-software-engineer-archiving-and-data-services">Senior Software Engineer - Archiving and Data Services</a>
+	  <p><strong>Location:</strong> Internet Archive - Full-time</p>
+	</li>
+	<li class="form-group">
+	  <a target="_blank" href="https://app.trinethire.com/companies/32967-internet-archive/jobs/90128-major-gifts-officer">Major Gifts Officer</a>
+	  <p><strong>Location:</strong> Austin  - Full-time</p>
+	</li>
+	<li class="form-group">
+	  <a target="_blank" href="https://app.trinethire.com/companies/32967-internet-archive/jobs/88995-major-gifts-officer">Major Gifts Officer</a>
+	  <p><strong>Location:</strong> IA Headquarters - SF - Full-time</p>
+	</li>
+	
+		</ul>
+	</div>
+	<footer>
+		<ul>
+			<li><a href="">About</a></li>
+			<li><a href="">Blog</a></li>
+			<li><a href="">Projects</a></li>
+			<li><a href="">Help</a></li>
+			<li><a href="">Donate</a></li>
+			<li><a href="">Contact</a></li>
+			<li><a href="">Jobs</a></li>
+			<li><a href="">Volunteer</a></li>
+			<li><a href="">People</a></li>
+		</ul>
+	</footer>
+</body>
+<script>
+	//     function makeGet(){
+	//       fetch('https://archive.org/wayback/available?url=google.com')
+	// .then(result => result.json())
+	// .then(data => {
+	//     let row = `<tr><th>Url</th><th>Archived snapshot</th><th>Timestamp</th></tr>`;
+	//         row += `<tr><td>${data.url}</td>
+	//             <td>${data.archived_snapshots.closest.url}</td>
+	//             <td>${data.archived_snapshots.closest.timestamp}</td>
+	//             </tr>`;
+	//     document.getElementById('tableone').innerHTML = row;
+	// console.log(data)})
+	// .catch(error => console.log('Error'))  
+	//     }
+	var inputBox = document.getElementById("input-box");
+	inputBox.onkeyup = function () {
+		var input = inputBox.value;
+		if (input.length != 0) {
+			fetch('/__wb/search/host?q=' + input)
+				.then(result => result.json())
+				.then(data => {
+					if (data.hosts.length != 0) {
+						let row = '';
+						for (i = 0; i < data.hosts.length; i++) {
+							displayName = data.hosts[i].display_name;
+							row += `<li>${displayName}</li>`;
+							document.getElementById('tableone').innerHTML = row;
+						}
+						document.getElementById('tableone').innerHTML = `<ul>${row}</ul>`;
+						console.log(data)
+					}
+					else {
+						// document.getElementById('tableone').innerHTML = `<ul><li>${input}</li></ul>`;
+						document.getElementById('tableone').innerHTML = ``;
+					}
+				})
+				.catch(error => console.log(error))
+		} else {
+			document.getElementById('tableone').innerHTML = '';
+		}
+	}
+
+
+
+
+
+
+</script>
+
+</html>
