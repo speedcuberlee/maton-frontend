@@ -2,226 +2,132 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Archive.org</title>
-	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
-	<link rel="icon" type="image/x-icon" href="images/archive-org.svg">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-	<link rel="stylesheet" href="styles.css">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Archive: About IA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
 </head>
 
 <body>
-	<header>
-		<nav class="user-navbar">
-			<ul>
+    <header>
+        <div class="background"></div>
+        <nav class="user-navbar">
+            <img id="logo-photo" src="images/Internet-Archive-Logo.jpg" width="50" height="50">
+            <div class="logo"><a href="#"> INTERNET ARCHIVE </a></div>
+            <ul>
+                <button><a href="registration/sign-up.html">Sign up</a></button>
+                <button><a href="registration/login.html">Login</a></button>
+                <button><a href="#">Upload</a></button>
+            </ul>
+        </nav>
+        <nav class="main-navbar">
+            <ul>
+                <li><a href="web.html">Web</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="software.html">Software</a></li>
+                <li><a href="images.html">Images </a></li>
+            </ul>
+        </nav> 
+    </header>
+        <h1>About the Internet Archive</h1>
+        <img id="about-photo" src="images/about-photo.png" width="400" height="300">
+         <p class="para"> The Internet Archive, a 501(c)(3) non-profit, is building a digital library of Internet sites and other cultural artifacts in digital form. Like a paper library, we provide free access to researchers, historians, scholars, people with print disabilities, and the general public.
+            Our mission is to provide Universal Access to All Knowledge.</p>
+         <p class="para">We began in 1996 by archiving the Internet itself, a medium that was just beginning to grow in use. Like newspapers, the content published on the web was ephemeral - but unlike newspapers, no one was saving it.
+            Today we have 28+ years of web history accessible through the Wayback Machine and we work with 1,200+ library and other partners through our Archive-It program to identify important web pages.</p>
+        <p id="paragraph-3">As our web archive grew, so did our commitment to providing digital versions of other published works. Today our archive contains:</p>
+            <ul class="amount-of-pages">
+                <li>835 billion web pages</li>
+                <li>44 million books and texts</li>
+                <li>15 million audio recordings (including 255,000 live concerts)</li>
+                <li>10.6 million videos (including 2.6 million Television News programs)</li>
+                <li>4.8 million images</li>
+                <li>1 million software programs</li>
+            </ul>
 
-				<li><a href="">Internet Archive</a></li>
-				<li><a href="">Sign up</a></li>
-				<li><a href="">Login</a></li>
-				<li><a href="">Upload</a></li>
-			</ul>
-		</nav>
+            <p class="para">Anyone with a free account can upload media to the Internet Archive. We work with thousands of partners globally to save copies of their work into special collections.</p>
+           
+            <p class="para">Because we are a library, we pay special attention to books. Not everyone has access to a public or academic library with a good collection, so to provide universal access we need to provide digital versions of books. We began a program to digitize books in 2005 and today we scan 4,400 books per day in 20 locations around the world. Books published in or prior to 1928 are available for download, and hundreds of thousands of modern books can be borrowed through our Open Library site. One of the Internet Archive's missions is to serve people who have difficulty interacting with physical books, so most of our digitized books are available to people with print disabilities (learn about access here).</p>
+            
+            <p class="para">Like the Internet, television is also an ephemeral medium. We began archiving television programs in late 2000, and our first public TV project was an archive of TV news surrounding the events of September 11, 2001. In 2009 we began to make selected U.S. television news broadcasts searchable by captions in our TV News Archive. This service allows researchers and the public to use television as a citable and sharable reference.</p>
+            
+            <p class="para"> The Internet Archive serves millions of people each day and is one of the top 300 web sites in the world. A single copy of the Internet Archive library collection occupies 145+ Petabytes of server space (and we store at least 2 copies of everything). We are funded through donations, grants, and by providing web archiving and book digitization services for our partners. As with most libraries we value the privacy of our patrons, so we avoid keeping the IP (Internet Protocol) addresses of our readers and offer our site in https (secure) protocol.</p>
+            
+            <p class="para">You can find information about our projects on our blog (including important announcements), contact us, buy swag in our store, and follow us on Twitter and Facebook. Welcome to the library!</p>
 
-		<nav class="main-navbar">
-			<ul>
-				<li><a href="">Web</a></li>
-				<li><a href="">Books</a></li>
-				<li><a href="">Video</a></li>
-				<li><a href="">Audio</a></li>
-				<li><a href="">Software</a></li>
-				<li><a href="">Images</a></li>
-			</ul>
-		</nav>
-	</header>
+            <p class="para"> Generous funding has come from Foundations including:</p>
+            <ul class="foundations">
+                <li>Andrew W. Mellon Foundation</li>
+                <li>Council on Library and Information Resources</li>
+                <li>Democracy Fund</li>
+                <li>Federal Communications Commission Universal Service Program for Schools and Libraries (E-Rate)</li>
+                <li>Institute of Museum and Library Services (IMLS)</li>
+                <li>Knight Foundation</li>
+                <li>Laura and John Arnold Foundation</li>
+                <li>National Endowment for the Humanities, Office of Digital Humanities</li>
+                <li>National Science Foundation</li>
+                <li>The Peter and Carmen Lucia Buck Foundation</li>
+                <li>The Philadelphia Foundation</li>
+                <li>Rita Allen Foundation</li>
+            </ul>
 
-	<section>
-		<div class="search-bar">
-			<div class="row">
-				<input id="input-box" type="text" placeholder="Search the history of websites" value=""
-					autocomplete="off">
-				<button>
-					<i class="fa-solid fa-magnifying-glass"></i>
-				</button>
-			</div>
-			<div class="result-box" id="tableone">
-			</div>
+            <p class="para">The Internet Archive is a member of:</p>
+            <ul class="members">
+                <li>American Library Association (ALA)</li>
+                <li>Association for Recorded Sound Collections (ARSC)</li>
+                <li>Biodiversity Heritage Library (BHL)</li>
+                <li>Boston Library Consortium (BLC)</li>
+                <li>Califa</li>
+                <li>Council on Library and Information Resources (CLIR)</li>
+                <li>Coalition for Networked Information (CNI)</li>
+                <li>Digital Library Federation (DLF)</li>
+                <li>Digital Preservation Coalition (DPC)</li>
+                <li>Digital Public Library of America (DPLA)</li>
+                <li>International Federation of Library Associations and Institutions (IFLA)</li>
+                <li>International Internet Preservation Consortium (IIPC)</li>
+                <li>Music Library Association</li>
+                <li>National Digital Stewardship Alliance (NDSA)</li>
+                <li>ReShare</li>
+            </ul>
 
-		</div>
-		<h2 onclick="makeGet()"> WAYBACK MACHINE</h2>
+            <h2>Read More</h2>
+            <ul class="options">
+                <li>Job Opportunities at the Internet Archive</li>
+                <li>Events</li>
+                <li>Terms of Service (updated 12/31/2014)</li>
+            </ul>
 
-	</section>
-	<main id="maincontent">
-		<div class="container container-ia">
-
-			<div class="row">
-	<div class="col-md-9">
-		  <h1>Bios</h1>
-  <style type="text/css">
-div.bio > div {
-	border-bottom: 1px solid gray;
-	padding: 10px 4px 10px 4px;
-	clear: left;
-	min-height: 130px;
-	overflow: hidden;
-}
-div.bio > div img {
-	float: left;
-	width: 100px;
-	max-width: 100px;
-	margin: 0 10px 10px 0;
-	border-radius: 7px;
-}
-</style>
-
-<h3>Board of Directors</h3>
-
-<div class="bio">
-<div>
-	<img src="//archive.org/download/images/BrewsterKahleHeadshot.png" loading="lazy">
-	<b>Brewster Kahle</b> <i>Board Chair</i><br>
-
-	<p>
-		A passionate advocate for public Internet access and a successful entrepreneur, Brewster Kahle has spent his career intent on a singular focus: providing Universal Access to All Knowledge. He is the founder and Digital Librarian
-		of the Internet Archive, one of the largest libraries in the world. Soon after graduating from the Massachusetts Institute of Technology where he studied artificial intelligence, Kahle helped found the company Thinking Machines,
-		a parallel supercomputer maker. In 1989, Kahle created the Internet's first publishing system called Wide Area Information Server (WAIS), later selling the company to AOL. In 1996, Kahle co-founded Alexa Internet, which helps
-		catalog the Web, selling it to Amazon.com in 1999. The Internet Archive, which he founded in 1996, now preserves 99+ petabytes of data - the books, Web pages, music, television, and software of our cultural heritage, working
-		with more than 400 library and university partners to create a digital library, accessible to all.
-	</p>
-</div>
-
-<div>
-	<img src="//archive.org/download/StaffPhotos/RickPrelinger.jpg" loading="lazy">
-	<b>Rick Prelinger</b> <i>Board President</i><br>
-
-	<p>
-		Rick Prelinger <a href="http://www.panix.com/~footage/">prelinger.com</a>, an archivist, writer and filmmaker, founded Prelinger Archives, whose collection of 51,000 advertising, educational, industrial, and amateur films was
-		acquired by the Library of Congress in 2002 after 20 years' operation. Rick has partnered with the Internet Archive to make <a href="http://www.archive.org/movies/prelinger.php">2,000 films from Prelinger Archives</a> available
-		online for free viewing, downloading and reuse. With the Voyager Company, a pioneer new media publisher, he produced fourteen laserdiscs and CD-ROMs with material from his archives, including "Ephemeral Films," the "Our Secret
-		Century" series and "Call It Home: The House That Private Enterprise Built," a laserdisc on the history of suburbia and suburban planning. Rick has taught in the MFA Design program at New York's School of Visual Arts and
-		lectured widely on American cultural and social history and on issues of cultural and intellectual property access. He sits on the National Film Preservation Board as representative of the Association of Moving Image Archivists
-		and is Board President of the Internet Archive and also the San Francisco Cinematheque. His feature-length film "Panorama Ephemera," depicting the conflicted landscapes of 20th-century America, opened in summer 2004. He is
-		co-founder of the <a href="http://www.home.earthlink.net/~alysons/library.html">Prelinger Library</a>, an appropriation-friendly reference library located in San Francisco.
-	</p>
-</div>
-
-<div>
-	<img src="//archive.org/serve/StaffPhotos/kathybio.jpg" loading="lazy">
-	<b>Kathleen Burch</b><br>
-
-	<p>Kathleen Burch has decades of experience in non-profit management, strategic thinking, and community activation, all to serve her passion and commitment to universal literacy and book publishing.</p>
-
-	<p>
-		After studies at Mills College in Oakland in English Literature and and graduate work in the Book Arts department, she founded a type &amp; design studio and collaborated with an independent publishing house, Burning Books, both of
-		which thrived in San Francisco throughout the eighties.
-	</p>
-
-	<p>
-		An understanding of the community's needs, along with her value for arts organizations, book arts and social entrepreneuring, drove Burch to go on to co-found the
-		<a href="http://www.sfcb.org">San Francisco Center for the Book</a> in 1996. She now serves as its board vice-chair and on the executive committee in perpetuity. Besides sitting on several other community-based boards, she also
-		chaired the board of Pro Arte Libri, an international arts organization devoted to the art of fine bookmaking.
-	</p>
-
-	<p>
-		She has practiced symbolic communication through typographic languages since 1974, publishing the works of big thinkers such as John Cage, Robert Ashley, Yoko Ono, Laurie Anderson, and her own work on game theory and the culture
-		of card-playing, with recent studies in the Visual Criticism department at California College of Art in San Francisco. Her work with Burning Books was the subject of a retrospective exhibition at Mills College in 1996. She was a
-		Xerox PARC artist-in-residence in 2000.
-	</p>
-</div>
-
-<div>
-	<img src="//archive.org/serve/StaffPhotos/rumseybio.jpg" loading="lazy">
-	<b>David Rumsey</b><br>
-
-	<p>
-		David Rumsey is President of Cartography Associates, a digital publishing company based in San Francisco, and Chairman of <a href="http://www.lunaimaging.com/">Luna Imaging</a>, a provider of software for online image
-		collections. Rumsey's collection of historical maps numbers over 150,000 cartographic items and is one of the largest private map collections in the United States. In 2002, he received a Webby Award for Technical Achievement and
-		an Honors Award from the Special Libraries Association for providing free public access to his private map collection at the <a href="http://www.davidrumsey.com/index.html">David Rumsey Map Collection</a>.
-	</p>
-
-	<p>
-		Rumsey received his BA and MFA from Yale University where he was a lecturer in art and a founding member of Yale Research Associates in the Arts, a group of artists working with electronic technologies. He serves on the boards
-		of the <a href="http://longnow.org/">Long Now Foundation</a>, <a href="http://www.brown.edu/Facilities/John_Carter_Brown_Library/"> John Carter Brown Library</a>, Advisory Board to
-		<a href="http://www-sul.stanford.edu/">Stanford University Library</a>, and is a trustee of <a href="http://www.library.yale.edu/development/associates.html">Yale Library Associates</a> and the
-		<a href="http://www.kressfoundation.org/">Samuel H. Kress Foundation</a>.
-	</p>
-
-	<p>
-		Rumsey has lectured widely regarding his online library work, including talks at the Library of Congress, New York Public Library, Digital Library Federation, Stanford University, Harvard University, and at conferences in the
-		U.S., Hong Kong, Mexico, Japan, United Kingdom, and Germany. He has contributed to several publications on cartography and the advent of <a href="http://www.davidrumsey.com/gis/ch01.pdf">GIS</a>. In 2005 ESRI Press published his
-		book <a href="http://www.davidrumsey.com/cartographica.html">Cartographica Extraordinaire</a>. Recently, Rumsey has been creating historical map projects both in
-		<a href="http://www.googleblog.blogspot.com/2006/11/old-world-meets-new-on-google-earth.html"> Google Earth</a> and the virtual world of <a href="http://www.davidrumsey.com/secondlife.html">Second Life</a>.
-	</p>
-</div>
-</div>
-	</div>
-  </div>
-  <br clear="all">
-		  </div>
-			</main>
-	<footer>
-		<ul>
-			<li><a href="">About</a></li>
-			<li><a href="">Blog</a></li>
-			<li><a href="">Projects</a></li>
-			<li><a href="">Help</a></li>
-			<li><a href="">Donate</a></li>
-			<li><a href="">Contact</a></li>
-			<li><a href="">Jobs</a></li>
-			<li><a href="">Volunteer</a></li>
-			<li><a href="">People</a></li>
-		</ul>
-	</footer>
+            <h3>News</h3>
+            <ul class="stories">
+                <li> Guernica editor Jina Moore quits after magazine retracts Israeli writer's essay</li>
+                <li>The Internet Archive Just Backed Up an Entire Caribbean Island</li>
+                <li>Zero Retries 0146</li>
+                <li>Bing Search tests removing cache link</li>
+                <li>FBI Gate Crash Suspect Loved Trump and Pushed QAnon on Social Media</li>
+                <li>MSN</li>
+                <li>Fake AI law firms are sending fake DMCA threats to generate fake SEO gains</li>
+                <li>Why Nintendo Doesn't Want You Using Emulators To Play Its Games</li>
+                <li>Fake Lawsuit Threat Exposes Privnote Phishing Sites</li>
+                <li>QAnon believer who crashed SUV into FBI building wrote 'I love you' to Trump</li>
+                <li>[more]</li>
+            </ul>
+    <footer>
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">Donate</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Jobs</a></li>
+            <li><a href="">Volunteer</a></li>
+            <li><a href="">People</a></li>
+        </ul>
+    </footer>
 </body>
-<script>
-	//     function makeGet(){
-	//       fetch('https://archive.org/wayback/available?url=google.com')
-	// .then(result => result.json())
-	// .then(data => {
-	//     let row = `<tr><th>Url</th><th>Archived snapshot</th><th>Timestamp</th></tr>`;
-	//         row += `<tr><td>${data.url}</td>
-	//             <td>${data.archived_snapshots.closest.url}</td>
-	//             <td>${data.archived_snapshots.closest.timestamp}</td>
-	//             </tr>`;
-	//     document.getElementById('tableone').innerHTML = row;
-	// console.log(data)})
-	// .catch(error => console.log('Error'))  
-	//     }
-	var inputBox = document.getElementById("input-box");
-	inputBox.onkeyup = function () {
-		var input = inputBox.value;
-		if (input.length != 0) {
-			fetch('/__wb/search/host?q=' + input)
-				.then(result => result.json())
-				.then(data => {
-					if (data.hosts.length != 0) {
-						let row = '';
-						for (i = 0; i < data.hosts.length; i++) {
-							displayName = data.hosts[i].display_name;
-							row += `<li>${displayName}</li>`;
-							document.getElementById('tableone').innerHTML = row;
-						}
-						document.getElementById('tableone').innerHTML = `<ul>${row}</ul>`;
-						console.log(data)
-					}
-					else {
-						// document.getElementById('tableone').innerHTML = `<ul><li>${input}</li></ul>`;
-						document.getElementById('tableone').innerHTML = ``;
-					}
-				})
-				.catch(error => console.log(error))
-		} else {
-			document.getElementById('tableone').innerHTML = '';
-		}
-	}
-
-
-
-
-
-
-</script>
 
 </html>

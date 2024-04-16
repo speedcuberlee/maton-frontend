@@ -2,321 +2,115 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Archive.org</title>
-	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
-	<link rel="icon" type="image/x-icon" href="images/archive-org.svg">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-	<link rel="stylesheet" href="styles.css">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Archive: Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
 </head>
 
 <body>
-	<header>
-		<nav class="user-navbar">
-			<ul>
+    <header>
+        <div class="background"></div>
+        <nav class="user-navbar">
+            <img id="logo-photo" src="images/Internet-Archive-Logo.jpg" width="50" height="50">
+            <div class="logo"><a href="home.html"> INTERNET ARCHIVE </a></div>
+            <ul>
+                <button><a href="registration/sign-up.html">Sign up</a></button>
+                <button><a href="registration/login.html">Login</a></button>
+                <button><a href="upload-file/upload.html">Upload</a></button>
+            </ul>
+        </nav>
+        <nav class="main-navbar">
+            <ul>
+                <li><a href="web.html">Web</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="software.html">Software</a></li>
+                <li><a href="images.html">Images </a></li>
+            </ul>
+        </nav> 
+    </header>
+    
+    <h1> Internet Archive Projects</h1>
+    <p class="header">Political TV Ad Archive</p>
+    <img id="about-photo" src="images/project-photo1.png" width="250" height="200">
+    <p class="para">The Political TV Ad Archive is a project that provides a searchable, viewable, and shareable online archive of 2016 political TV ads, married with fact-checking and reporting citizens can trust. In partnership with trusted journalism organizations, the archive provides a free service for journalists, civic organizations, academics and the general public to track these ads in context. The first phase of the project, covering key 2016 primary elections, was funded by a $200,000 grant from the Knight News Challenge, an initiative of the John S. and James L. Knight Foundation. The Challenge was a collaboration joined by the Rita Allen Foundation, the Democracy Fund, and the Hewlett Foundation. The Democracy Fund also granted $49,634 to support joint trainings of journalists in key primary states in partnership with the American Press Institute. Additional support came from personal donations from Christopher Buck ($25,000) and Craig Newmark ($20,000). Project staff are gathering lessons learned, which will inform planning and fundraising for the second phase of the project: tracking political ads in key 2016 general election battleground states.</p>
 
-				<li><a href="">Internet Archive</a></li>
-				<li><a href="">Sign up</a></li>
-				<li><a href="">Login</a></li>
-				<li><a href="">Upload</a></li>
-			</ul>
-		</nav>
+    <p class="header">Building Libraries Together</p>
+    <img id="about-photo" src="images/project-photo2.png" width="200" height="250">
+    <p class="para">The Internet Archive is one of the world's largest public digital libraries, with an extensive collection of human culture: 2 million books, 430 billion Web pages, 3 million hours of television and more. However, the archive's users upload only a small percentage of these materials and to preserve the world's knowledge the public should be encouraged to contribute. The archive is embarking on a project to make the archive.org site more community-driven by improving the tools that allow people to upload, describe and organize items. With these new tools, the Internet Archive hopes to democratize knowledge by giving global communities the ability to save, manage and share their cultural treasures for free. What Wikimedia did for encyclopedia articles, the Internet Archive hopes to do for collections of media: give people the tools to build library collections together and make them accessible to everyone. The project is supported by a $600,000 grant from the John S. and James L. Knight Foundation.</p>
 
-		<nav class="main-navbar">
-			<ul>
-				<li><a href="">Web</a></li>
-				<li><a href="">Books</a></li>
-				<li><a href="">Video</a></li>
-				<li><a href="">Audio</a></li>
-				<li><a href="">Software</a></li>
-				<li><a href="">Images</a></li>
-			</ul>
-		</nav>
-	</header>
+    <p class="header">Open Library</p>
+    <img id="about-photo" src="images/project-photo3.png" width="250" height="200">
+    <p class="para">OpenLibrary.org is comprised of two great parts! A free, digital lending library of over 2 million eBooks that can be read in a browser or downloaded for reading off-line. And, a unique project to build one web page for every book ever published. Over 20 million books already have a page on OpenLibrary.org</p>
+    <p class="para">Please participate in the building of this site. It is an Open project - the software is open, the data is open, the documentation is open, and the site is open. Anyone can participate in this project, whether you're a librarian who wants to add records of digitized books to her local catalog, or you're a lover of books who wants to make sure his favorites are well represented, or you just want to find a good book to read for free, or you're a programmer who wants to build something new on top of this data.</p>
 
-	<section>
-		<div class="search-bar">
-			<div class="row">
-				<input id="input-box" type="text" placeholder="Search the history of websites" value=""
-					autocomplete="off">
-				<button>
-					<i class="fa-solid fa-magnifying-glass"></i>
-				</button>
-			</div>
-			<div class="result-box" id="tableone">
-			</div>
+    <p class="header">Scanning Services</p>
+    <img id="about-photo" src="images/project-photo4.png" width="250" height="200">
+    <p class="para">Internet Archive can digitize your collections and provide open and free access, long-term storage, unlimited downloads, and lifetime file management. Internet Archive has scanned more than 600 million pages with partners ranging from the Library of Congress and the Smithsonian to New York Public Library, Harvard, and MIT. Contact info@archive.org if you are interested in having your collection digitized.</p>
 
-		</div>
-		<h2 onclick="makeGet()"> WAYBACK MACHINE</h2>
+    <p class="header">Software Archive</p>
+    <img id="about-photo" src="images/project-photo5.png" width="300" height="150">
+    <p class="para">The Software Archive is designed to preserve and provide access to all kinds of rare or difficult to find, legally downloadable software titles and background information on those titles.</p>
+    <p class="para">The collection includes a broad range of software related materials including shareware, freeware, video news releases about software titles, speed runs of actual software game play, previews and promos for software games, high-score and skill replays of various game genres, and the art of filmmaking with real-time computer game engines.</p>
 
-	</section>
-	<div class="col-md-9">
-		<h1>Internet Archive Projects</h1>
-<style>
-.row.xxx:after { clear:none !important; }
-</style>
+    <p class="header">Wayback Machine</p>
+    <img id="about-photo" src="images/project-photo6.png" width="300" height="150">
+    <p class="para">Internet Archive's web archive, launched in 1996, contains over 2 petabytes of data compressed, or 150+ billion web captures, including content from every top-level domain, 200+ million web sites, and over 40 languages.</p>
 
-<div class="row xxx">
-<div class="col-sm-3">
-<a href="http://politicaladarchive.org/"><img src="//archive.org/download/ProjectLogos/tvpoliticaladlogo-medium.png" border="0" width="150" align="center"></a>
-</div>
-<div class="col-sm-9">
-<b>Political TV Ad Archive</b>
-<p>The <a href="http://politicaladarchive.org/">Political TV Ad Archive</a> is a project that provides a searchable, viewable, and shareable online archive of 2016 political TV ads, married with fact-checking and reporting citizens can trust.  In partnership with trusted journalism organizations, the archive provides a free service for journalists, civic organizations, academics and the general public to track these ads in context.  The first phase of the project, covering key 2016 primary elections, was  funded by a $200,000 grant from the <a href="https://www.newschallenge.org/">Knight News Challenge</a>, an initiative of the John S. and James L. Knight Foundation. The Challenge was a collaboration joined by the <a href="http://www.ritaallenfoundation.org/">Rita Allen Foundation</a>, the <a href="http://www.democracyfund.org/">Democracy Fund</a>, and the <a href="http://www.hewlett.org/">Hewlett Foundation</a>.  The Democracy Fund also granted $49,634 to support joint trainings of journalists in key primary states in partnership with the <a href="https://www.americanpressinstitute.org/">American Press Institute</a>.  Additional support came from personal donations from Christopher Buck ($25,000) and Craig Newmark ($20,000).  Project staff are gathering lessons learned, which will inform planning and fundraising for the second phase of the project: tracking political ads in key 2016 general election battleground states.</p><br>
-</div>
-</div>
-<hr>
+    <p class="header">Archive-It</p>
+    <img id="about-photo" src="images/project-photo7.png" width="250" height="200">
+    <p class="para">First deployed in 2006, Archive-It is a subscription web archiving service that helps organizations to harvest, build, and preserve collections of digital content. Through the user friendly web application Archive-It partners can collect, catalog, and manage their collections of archived content with 24/7 access and full text search available for their use as well as their patrons. Content is hosted and stored at the Internet Archive data centers.</p>
+    <p class="para">Over 240 partner organizations in 46 U.S. states and 15 countries currently use Archive-It, including state archives and libraries, university libraries, federal institutions, museums, NGOs and public libraries.</p>
 
+    <p class="header">Offline Archive</p>
+    <img id="about-photo" src="images/project-photo8.png" width="250" height="200">
+    <p class="para">The Internet Archive's central mission is establishing "Universal Access to All Knowledge," and we want to make sure that our library of millions of books, journals, audio files, and video recordings is available to anyone. Since lack of an internet connection is a major obstacle to that goal, we created the Offline Archive project -that works to make online collections available regardless of internet availability.</p>
 
-<div class="row xxx">
-<div class="col-sm-3">
-<a href="/scanning"><img src="//archive.org/download/ProjectLogos/building-logo.png" border="0" width="150" align="center"></a>
-</div>
-<div class="col-sm-9">
-<b>Building Libraries Together</b>
-<p>The Internet Archive is one of the world's largest public digital libraries, with an extensive collection of human culture: 2 million books, 430 billion Web pages, 3 million hours of television and more.   However, the archive's users upload only a small percentage of these materials and to preserve the world's knowledge the public should be encouraged to contribute.  The archive is embarking on a project to make the archive.org site more community-driven by improving the tools that allow people to upload, describe and organize items.  With these new tools, the Internet Archive hopes to democratize knowledge by giving global communities the ability to save, manage and share their cultural treasures for free.  What Wikimedia did for encyclopedia articles, the Internet Archive hopes to do for collections of media: give people the tools to build library collections together and make them accessible to everyone. The project is supported by a $600,000 grant from the <a href="http://www.knightfoundation.org/">John S. and James L. Knight Foundation</a>.</p><br>
-</div>
-</div>
-<hr>
+    <p class="header">BookServer</p>
+    <img id="about-photo" src="images/project-photo9.png" width="250" height="150">
+    <p class="para">The BookServer project provides an open architecture for vending, lending and distributing books over the Internet. Built on open standards, the BookServer model allows a wide network of publishers, booksellers, libraries, and other parties to make their catalogs of books available directly to readers through their laptops, phones, netbooks, or dedicated reading devices.</p>
 
-<div class="row xxx">
-<div class="col-sm-3">
-<a href="http://openlibrary.org/"><img src="https://openlibrary.org/images/logo_OL-lg.png" border="0" width="150" align="center"></a>
-</div>
-<div class="col-sm-9">      
-<a href="https://openlibrary.org/"><b>Open Library</b></a>
-<p>OpenLibrary.org is comprised of two great parts! A free, digital lending library of over 2 million eBooks that can be read in a browser or downloaded for reading off-line. And, a unique project to build one web page for every book ever published. Over 20 million books already have a page on OpenLibrary.org</p>
+    <p class="header">Open Content Alliance</p>
+    <img id="about-photo" src="images/project-photo10.png" width="250" height="100">
+    <p class="para">The Open Content Alliance (OCA) was a collaborative effort of a group of cultural, technology, nonprofit, and governmental organizations from around the world that helps build a permanent archive of multilingual digitized text and multimedia material. An archive of contributed material is available on the Internet Archive site and through Yahoo! and other search engines and sites.</p>
 
-<p>Please participate in the building of this site. It is an Open project - the software is open, the data is open, the documentation is open, and the site is open.  Anyone can participate in this project, whether you're a librarian who wants to add records of digitized books to her local catalog, or you're a lover of books who wants to make sure his favorites are well represented, or you just want to find a good book to read for free, or you're a programmer who wants to build something new on top of this data.</p>
-</div>
-</div>
-<hr>
+    <p class="header">Education</p>
+    <img id="about-photo" src="images/project-photo11.png" width="250" height="100">
+    <p class="para">Open Education Resources library containing hundreds of free courses, video lectures, and supplemental materials from universities in the United States and China.</p>
 
+    <p class="header">Bookmobile</p>
+    <img id="about-photo" src="images/project-photo12.png" width="250" height="200">
+    <p class="para">The Bookmobile is a mobile digital library capable of downloading public domain books from the Internet via satellite and printing them anytime, anywhere, for anyone. The Bookmobile has travelled across the United States, and versions of it have been built and used in Egypt and Uganda.</p>
 
-<div class="row xxx">
-<div class="col-sm-3">
-<a href="/scanning"><img src="//archive.org/download/ProjectLogos/scanning_services.jpg" border="0" width="150" align="center"></a>
-</div>
-<div class="col-sm-9">
-<a href="/scanning"><b>Scanning Services</b></a>
-<p>Internet Archive can digitize your collections and provide open and free access, long-term storage, unlimited downloads, and lifetime file management.  Internet Archive has scanned more than 600 million pages with partners ranging from the Library of Congress and the Smithsonian to New York Public Library, Harvard, and MIT. Contact info@archive.org if you are interested in having your collection digitized.</p><br>
-</div>
-</div>
-<hr>
+    <p class="header">Open Community Networks</p>
+    <img id="about-photo" src="images/project-photo13.png" width="250" height="100">
+    <p class="para">Internet Archive's Community Networking project provides free, high speed wired and wireless Internet to residents of San Francisco. The project has evolved greatly since its inception in 1997, and currently works with the City and County of San Francisco to provide free, high speed internet to low income San Francisco residents. We are intersted in providing the same to other communities. If you are interested, please contact info@archive.org</p>
 
+    <p class="header">Petabox</p>
+    <img id="about-photo" src="images/project-photo14.png" width="250" height="200">
+    <p class="para">The PetaBox was custom-designed by Internet Archive staff to safely store and process one petabyte (a million gigabytes) of information. The goal was to make a storage system that was low power, high density, easy to scale and maintain, and low cost. PetaBoxes are now in use at major academic institutions and government agencies. The Internet Archive houses more than 10 petabytes of PetaBox storage technology and is expanding steadily.</p>
 
+    <p class="header">301Works.org</p>
+    <img id="about-photo" src="images/project-photo15.png" width="300" height="50">
+    <p class="para">301Works.org is an independent service for archiving URL mappings. The goal of the service is to provide protection for every day users of short URL services by providing transparency and permanence of their mappings.</p>
 
-<div class="row xxx">
-<div class="col-sm-3">
-<a href="/details/software"><img src="//archive.org/download/ProjectLogos/softwareheader.gif" border="0" width="150" align="center"></a>
-</div>
-<div class="col-sm-9">
-<a href="/details/software"><b>Software Archive</b></a>
-<p>The Software Archive is designed to preserve and provide access to all kinds of rare or difficult to find, legally downloadable software titles and background information on those titles.</p>
-<p>The collection includes a broad range of software related materials including shareware, freeware, video news releases about software titles, speed runs of actual software game play, previews and promos for software games, high-score and skill replays of various game genres, and the art of filmmaking with real-time computer game engines.</p>
-</div>
-</div>
-<hr>
-
-
-
-<div class="row xxx">
-<div class="col-sm-3">
-<a href="/web/"><img src="//archive.org/images/wayback.gif" border="0" width="150" align="center"></a>
-</div>
-<div class="col-sm-9">
-<a href="/web/"><b>Wayback Machine</b></a>
-<p>Internet Archive's web archive, launched in 1996, contains over 2 petabytes of data compressed, or 150+ billion web captures, including content from every top-level domain, 200+ million web sites, and over 40 languages.</p>
-</div>
-</div>
-<hr>
-
-
-
-<div class="row xxx">
-<div class="col-sm-3">
-<a href="http://archive-it.org/"><img src="//archive.org/download/ProjectLogos/archive-it_logo.jpg" border="0" width="106" align="center"></a>
-</div>
-<div class="col-sm-9">
-<a href="http://archive-it.org/"><b>Archive-It</b></a>
-<p>First deployed in 2006, Archive-It is a subscription web archiving service that helps organizations to harvest, build, and preserve collections of digital content. Through the user friendly web application Archive-It partners can collect, catalog, and manage their collections of archived content with 24/7 access and full text search available for their use as well as their patrons. Content is hosted and stored at the Internet Archive data centers.</p>
-
-<p>Over 240 partner organizations in 46 U.S. states and 15 countries currently use Archive-It, including state archives and libraries, university libraries, federal institutions, museums, NGOs and public libraries.</p>
-</div>
-</div>
-<hr>
-
-<div class="row xxx">
-<div class="col-sm-3">
-<a href="/about/offline-archive"><img src="https://blog.archive.org/wp-content/uploads/2019/10/Screen-Shot-2019-10-17-at-9.36.54-AM.png" border="0" width="106" align="center"></a>
-</div>
-<div class="col-sm-9">
-<a href="/about/offline-archive"><b>Offline Archive</b></a>
-<p>The Internet Archive's central mission is establishing "Universal Access to All Knowledge," and we want to make sure that our library of millions of books, journals, audio files, and video recordings is available to anyone. Since lack of an internet connection is a major obstacle to that goal, we created the Offline Archive project -that works to make online collections available regardless of internet availability.</p>
-</div>
-</div>
-<hr>
-
-
-<div class="row xxx">
-<div class="col-sm-3">
-<a href="/bookserver"><img src="//archive.org/download/ProjectLogos/bookserver-temp.jpg" border="0" width="147" height="27" align="center"></a>
-</div>
-<div class="col-sm-9">
-<a href="/bookserver"><b>BookServer</b></a>
-<p>The BookServer project provides an open architecture for vending, lending and distributing books over the Internet.  Built on open standards, the BookServer model allows a wide network of publishers, booksellers, libraries, and other parties to make their catalogs of books available directly to readers through their laptops, phones, netbooks, or dedicated reading devices. </p>
-</div>
-</div>
-<hr>
-
-
-
-
-<div class="row xxx">
-<div class="col-sm-3">
-<img src="//archive.org/download/ProjectLogos/oca_logo.jpg" border="0" width="150" align="center">
-</div>
-<div class="col-sm-9">
-<b>Open Content Alliance</b>
-<p>The Open Content Alliance (OCA) was a collaborative effort of a group of cultural, technology, nonprofit, and governmental organizations from around the world that helps build a permanent archive of multilingual digitized text and multimedia material. An archive of contributed material is available on the <a href="/details/opencontentalliance">Internet Archive site</a> and through Yahoo! and other search engines and sites.</p>
-</div>
-</div>
-<hr>
-
-
-
-<div class="row xxx">
-<div class="col-sm-3">
-<a href="/details/education"><img src="//archive.org/serve/images/main-header.jpg" border="0" width="150" align="center"></a>
-</div>
-<div class="col-sm-9">
-<a href="/details/education"><b>Education</b></a>
-<p>Open Education Resources library containing hundreds of free courses, video lectures, and supplemental materials from universities in the United States and China.</p>
-</div>
-</div>
-<hr>
-
-
-
-<div class="row xxx">
-<div class="col-sm-3">
-<a href="/texts/bookmobile.php"><img src="//archive.org/download/ProjectLogos/bookmobile_lg.gif" border="0" width="150" align="center"></a>
-</div>
-<div class="col-sm-9">
-<a href="/texts/bookmobile.php"><b>Bookmobile</b></a>
-<p>The Bookmobile is a mobile digital library capable of downloading public domain books from the Internet via satellite and printing them anytime, anywhere, for anyone.  The Bookmobile has travelled across the United States, and versions of it have been built and used in Egypt and Uganda.</p>
-<br><br><br><br>
-</div>
-</div>
-<hr>
-
-
-
-<div class="row xxx">
-<div class="col-sm-3">
-<a href="/web/sflan.php"><img src="//archive.org/download/ProjectLogos/sflan_community_wireless.jpg" border="0" width="150" align="center"></a>
-</div>
-<div class="col-sm-9">
-<a href="/web/sflan.php"><b>Open Community Networks</b></a>
-<p>Internet Archive's Community Networking project provides free, high speed wired and wireless Internet to residents of San Francisco. The project has evolved greatly since its inception in 1997, and 
-currently works with the City and County of San Francisco to provide free, 
-high speed internet to low income San Francisco residents.   We are intersted in providing the same to other communities.
-If you are interested, please contact info@archive.org
-</p>
-</div>
-</div>
-<hr>
-
-
-
-<div class="row xxx">
-<div class="col-sm-3">
-<a href="/web/petabox.php"><img src="//archive.org/serve/images/petabox-header.png" border="0" width="150" align="center"></a>
-</div>
-<div class="col-sm-9">
-<a href="/web/petabox.php"><b>Petabox</b></a>
-<p>The PetaBox was custom-designed by Internet Archive staff to safely store and process one petabyte (a million gigabytes) of information.  The goal was to make a storage system that was low power, high density, easy to scale and maintain, and low cost.  PetaBoxes are now in use at major academic institutions and government agencies.  The Internet Archive houses more than 10 petabytes of PetaBox storage technology and is expanding steadily.</p>
-</div>
-</div>
-<hr>
-
-
-
-<div class="row xxx">
-<div class="col-sm-3">
-<a href="/details/301works"><img src="//archive.org/download/ProjectLogos/301works_logo.jpg" border="0" width="150" align="center"></a>
-</div>
-<div class="col-sm-9">
-<a href="/details/301works"><b>301Works.org</b></a>
-<p>301Works.org is an independent service for archiving URL mappings. The goal of the service is to provide protection for every day users of short URL services by providing transparency and permanence of their mappings.</p>
-</div>
-</div>
-<hr>
-  </div>
-	<footer>
-		<ul>
-			<li><a href="">About</a></li>
-			<li><a href="">Blog</a></li>
-			<li><a href="">Projects</a></li>
-			<li><a href="">Help</a></li>
-			<li><a href="">Donate</a></li>
-			<li><a href="">Contact</a></li>
-			<li><a href="">Jobs</a></li>
-			<li><a href="">Volunteer</a></li>
-			<li><a href="">People</a></li>
-		</ul>
-	</footer>
+    <footer>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="people.html">People</a></li>
+        </ul>
+    </footer>
 </body>
-<script>
-	//     function makeGet(){
-	//       fetch('https://archive.org/wayback/available?url=google.com')
-	// .then(result => result.json())
-	// .then(data => {
-	//     let row = `<tr><th>Url</th><th>Archived snapshot</th><th>Timestamp</th></tr>`;
-	//         row += `<tr><td>${data.url}</td>
-	//             <td>${data.archived_snapshots.closest.url}</td>
-	//             <td>${data.archived_snapshots.closest.timestamp}</td>
-	//             </tr>`;
-	//     document.getElementById('tableone').innerHTML = row;
-	// console.log(data)})
-	// .catch(error => console.log('Error'))  
-	//     }
-	var inputBox = document.getElementById("input-box");
-	inputBox.onkeyup = function () {
-		var input = inputBox.value;
-		if (input.length != 0) {
-			fetch('/__wb/search/host?q=' + input)
-				.then(result => result.json())
-				.then(data => {
-					if (data.hosts.length != 0) {
-						let row = '';
-						for (i = 0; i < data.hosts.length; i++) {
-							displayName = data.hosts[i].display_name;
-							row += `<li>${displayName}</li>`;
-							document.getElementById('tableone').innerHTML = row;
-						}
-						document.getElementById('tableone').innerHTML = `<ul>${row}</ul>`;
-						console.log(data)
-					}
-					else {
-						// document.getElementById('tableone').innerHTML = `<ul><li>${input}</li></ul>`;
-						document.getElementById('tableone').innerHTML = ``;
-					}
-				})
-				.catch(error => console.log(error))
-		} else {
-			document.getElementById('tableone').innerHTML = '';
-		}
-	}
-
-
-
-
-
-
-</script>
 
 </html>

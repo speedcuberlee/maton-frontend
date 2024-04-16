@@ -2,43 +2,40 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Archive.org</title>
-	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
-	<link rel="icon" type="image/x-icon" href="images/archive-org.svg">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-	<link rel="stylesheet" href="styles.css">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Archive: Digital Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
 </head>
 
 <body>
-	<header>
-		<nav class="user-navbar">
-			<ul>
+    <header>
+        <nav class="user-navbar">
+            <img id="logo-photo" src="images/Internet-Archive-Logo.jpg" width="50" height="50">
+            <div class="logo"><a href="#"> INTERNET ARCHIVE </a></div>
+            <ul>
+                <button><a href="registration/sign-up.html">Sign up</a></button>
+                <button><a href="registration/login.html">Login</a></button>
+                <button><a href="#">Upload</a></button>
+            </ul>
+        </nav>
+        <nav class="main-navbar">
+            <ul>
+                <li><a href="web.html">Web</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="software.html">Software</a></li>
+                <li><a href="images.html">Images </a></li>
+            </ul>
+        </nav> 
+    </header>
+    
+    <section>
 
-				<li><a href="">Internet Archive</a></li>
-				<li><a href="">Sign up</a></li>
-				<li><a href="">Login</a></li>
-				<li><a href="">Upload</a></li>
-			</ul>
-		</nav>
-
-		<nav class="main-navbar">
-			<ul>
-				<li><a href="">Web</a></li>
-				<li><a href="">Books</a></li>
-				<li><a href="">Video</a></li>
-				<li><a href="">Audio</a></li>
-				<li><a href="">Software</a></li>
-				<li><a href="">Images</a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<section>
-		<div class="search-bar">
+        <div class="search-bar">
 			<div class="row">
 				<input id="input-box" type="text" placeholder="Search the history of websites" value=""
 					autocomplete="off">
@@ -48,72 +45,21 @@
 			</div>
 			<div class="result-box" id="tableone">
 			</div>
-
 		</div>
-		<h2 onclick="makeGet()"> WAYBACK MACHINE</h2>
-
-	</section>
-	<footer>
-		<ul>
-			<li><a href="">About</a></li>
-			<li><a href="">Blog</a></li>
-			<li><a href="">Projects</a></li>
-			<li><a href="">Help</a></li>
-			<li><a href="">Donate</a></li>
-			<li><a href="">Contact</a></li>
-			<li><a href="">Jobs</a></li>
-			<li><a href="">Volunteer</a></li>
-			<li><a href="">People</a></li>
-		</ul>
-	</footer>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="people.html">People</a></li>
+        </ul>
+    </footer>
 </body>
-<script>
-	//     function makeGet(){
-	//       fetch('https://archive.org/wayback/available?url=google.com')
-	// .then(result => result.json())
-	// .then(data => {
-	//     let row = `<tr><th>Url</th><th>Archived snapshot</th><th>Timestamp</th></tr>`;
-	//         row += `<tr><td>${data.url}</td>
-	//             <td>${data.archived_snapshots.closest.url}</td>
-	//             <td>${data.archived_snapshots.closest.timestamp}</td>
-	//             </tr>`;
-	//     document.getElementById('tableone').innerHTML = row;
-	// console.log(data)})
-	// .catch(error => console.log('Error'))  
-	//     }
-	var inputBox = document.getElementById("input-box");
-	inputBox.onkeyup = function () {
-		var input = inputBox.value;
-		if (input.length != 0) {
-			fetch('/__wb/search/host?q=' + input)
-				.then(result => result.json())
-				.then(data => {
-					if (data.hosts.length != 0) {
-						let row = '';
-						for (i = 0; i < data.hosts.length; i++) {
-							displayName = data.hosts[i].display_name;
-							row += `<li>${displayName}</li>`;
-							document.getElementById('tableone').innerHTML = row;
-						}
-						document.getElementById('tableone').innerHTML = `<ul>${row}</ul>`;
-						console.log(data)
-					}
-					else {
-						// document.getElementById('tableone').innerHTML = `<ul><li>${input}</li></ul>`;
-						document.getElementById('tableone').innerHTML = ``;
-					}
-				})
-				.catch(error => console.log(error))
-		} else {
-			document.getElementById('tableone').innerHTML = '';
-		}
-	}
-
-
-
-
-
-
-</script>
 
 </html>
