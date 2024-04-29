@@ -1,155 +1,645 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archive.org</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link rel="icon" type="image/x-icon" href="images/archive-org.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/mega-menu.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Archive.org</title>
-	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
-	<link rel="icon" type="image/x-icon" href="images/archive-org.svg">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-	<link rel="stylesheet" href="styles.css">
+  <body>
+    <header>
+      <div class="background"></div>
+      <nav class="user-navbar">
+        <a href="home.html"
+          ><img
+            id="logo-photo"
+            src="images/internet-archive-logo.jpg"
+            width="50"
+            height="50"
+            alt=""
+        /></a>
+        <div class="logo"><a href="home.html"> INTERNET ARCHIVE </a></div>
+        <ul>
+          <li>
+            <a href="registration/sign-up.html">Sign up</a>
+          </li>
+          <li>
+            <a href="registration/login.html">Login</a>
+          </li>
+          <li>
+            <a href="upload-file/upload.html">Upload</a>
+          </li>
+        </ul>
+      </nav>
+      <nav>
+        <div class="wrapper">
+          <ul class="nav-links">
+            <li>
+              <a href="#">Web</a>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="main">
+                    <p>
+                      Search the history of over 866 billion web pages on the
+                      Internet.
+                    </p>
+                    <fieldset>
+                      <img src="images/wayback.svg" alt="" />
+                      <label for="url"></label>
+                      <div class="search-field">
+                        <input
+                          type="text"
+                          name="url"
+                          id="url"
+                          placeholder="enter URL or keywords"
+                        />
+                        <button>
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div class="main">
+                    <p>Mobile Apps</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> Wayback Machine (iOS) </a>
+                      </li>
+                      <li>
+                        <a href="#"> Wayback Machine(Android) </a>
+                      </li>
+                      <li>
+                        <a href="#"> Browser Extensions </a>
+                      </li>
+                      <li>
+                        <a href="#"> Chrome </a>
+                      </li>
+                      <li>
+                        <a href="#"> Firefox </a>
+                      </li>
+                      <li>
+                        <a href="#"> Safari </a>
+                      </li>
+                      <li>
+                        <a href="#"> Edge </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <p>Archive-It Subscription</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> Explore the Collections </a>
+                      </li>
+                      <li>
+                        <a href="#"> Learn More </a>
+                      </li>
+                      <li>
+                        <a href="#"> Build Collections </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <p>Save Page Now</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#">
+                          Capture a web page as it appears now for use as a
+                          trusted citation in the furture.
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="style-scope save-page-form">
+                      <input
+                        type="text"
+                        name="url_preload"
+                        placeholder="https://"
+                        class="style-scope save-page-form"
+                      />
+                      <input
+                        type="submit"
+                        value="Save"
+                        class="style-scope save-page-form"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">Books</a>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="main">
+                    <p>Books to Borrow</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/images/book-lend.png"
+                      alt="leading photo"
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Open Library</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/images/widgetOL.png"
+                      alt="open library photo"
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Featured</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> All Books </a>
+                      </li>
+                      <li>
+                        <a href="#"> All Texts </a>
+                      </li>
+                      <li>
+                        <a href="#"> This Just In </a>
+                      </li>
+                      <li>
+                        <a href="#"> Smithsonian Libraries </a>
+                      </li>
+                      <li>
+                        <a href="#"> FEDLINK (US) </a>
+                      </li>
+                      <li>
+                        <a href="#"> Genealogy </a>
+                      </li>
+                      <li>
+                        <a href="#"> Lincoln Collection </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <p>Top</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> American Libraries </a>
+                      </li>
+                      <li>
+                        <a href="#"> Canadian Libraries </a>
+                      </li>
+                      <li>
+                        <a href="#"> Universal Library </a>
+                      </li>
+                      <li>
+                        <a href="#"> Project Guttenberg </a>
+                      </li>
+                      <li>
+                        <a href="#"> Children's Library </a>
+                      </li>
+                      <li>
+                        <a href="#"> Biodiversity Heritage Library </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <ul class="mega-links">
+                      <li><a href="#">Addtional Collections</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">Video</a>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="main">
+                    <p>TV News</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/tv"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Understanding 9...</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/911"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Featured</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> All Video </a>
+                      </li>
+                      <li>
+                        <a href="#"> This Just in </a>
+                      </li>
+                      <li>
+                        <a href="#"> Prelinger Archives </a>
+                      </li>
+                      <li>
+                        <a href="#"> Democracy Now! </a>
+                      </li>
+                      <li>
+                        <a href="#"> Occupy Wall Street </a>
+                      </li>
+                      <li>
+                        <a href="#"> TV NSA Clip Library </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <p>Top</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> Animation & Cartoons </a>
+                      </li>
+                      <li>
+                        <a href="#"> Arts & Music </a>
+                      </li>
+                      <li>
+                        <a href="#"> Computer & Technology </a>
+                      </li>
+                      <li>
+                        <a href="#"> Cultural & Academic Flims </a>
+                      </li>
+                      <li>
+                        <a href="#"> Ephemeral Flims </a>
+                      </li>
+                      <li>
+                        <a href="#"> Movies </a>
+                      </li>
+                      <li>
+                        <a href="#"> New & Public Affairs </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> Spirituality & Religon </a>
+                      </li>
+                      <li>
+                        <a href="#"> Sports Videos </a>
+                      </li>
+                      <li>
+                        <a href="#"> Television </a>
+                      </li>
+                      <li>
+                        <a href="#"> Videogame Videos </a>
+                      </li>
+                      <li>
+                        <a href="#"> Vlogs </a>
+                      </li>
+                      <li>
+                        <a href="#"> Youth Media </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">Audio</a>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="main">
+                    <p>Live Music Archive</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/etree"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Librivox Free Audio</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/librivoxaudio"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Featured</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> All Audio </a>
+                      </li>
+                      <li>
+                        <a href="#"> This Just In </a>
+                      </li>
+                      <li>
+                        <a href="#"> Gateful Dead </a>
+                      </li>
+                      <li>
+                        <a href="#"> Netlabels </a>
+                      </li>
+                      <li>
+                        <a href="#"> Old Time Radio </a>
+                      </li>
+                      <li>
+                        <a href="#"> 78 RPMs and Cylinder Rec... </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <p>Top</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> Audio Books & Poetry </a>
+                      </li>
+                      <li>
+                        <a href="#"> Computers, Technology and ... </a>
+                      </li>
+                      <li>
+                        <a href="#"> Music, Arts & Culture </a>
+                      </li>
+                      <li>
+                        <a href="#"> News & Public Affairs </a>
+                      </li>
+                      <li>
+                        <a href="#"> Spirituality & Religon </a>
+                      </li>
+                      <li>
+                        <a href="#"> Podcasts </a>
+                      </li>
+                      <li>
+                        <a href="#"> Radio News Archive </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">Software</a>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="main">
+                    <p>Internet Arcade</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/internetarcade"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Console Living R...</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/consolelivingroom"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Featured</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> All Software </a>
+                      </li>
+                      <li>
+                        <a href="#"> This Just In </a>
+                      </li>
+                      <li>
+                        <a href="#"> Old School Emulation </a>
+                      </li>
+                      <li>
+                        <a href="#"> MS-DOS Games </a>
+                      </li>
+                      <li>
+                        <a href="#"> Historical Software </a>
+                      </li>
+                      <li>
+                        <a href="#"> Classic PC Games </a>
+                      </li>
+                      <li>
+                        <a href="#"> Software Library </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <p>Top</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> Kodi Archive and Support File </a>
+                      </li>
+                      <li>
+                        <a href="#"> Vintage Software </a>
+                      </li>
+                      <li>
+                        <a href="#"> APK </a>
+                      </li>
+                      <li>
+                        <a href="#"> MS-DOS </a>
+                      </li>
+                      <li>
+                        <a href="#"> CD-ROM Software </a>
+                      </li>
+                      <li>
+                        <a href="#"> CD-ROM Software Library </a>
+                      </li>
+                      <li>
+                        <a href="#"> Software Sites </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> Tucows Software Library </a>
+                      </li>
+                      <li>
+                        <a href="#"> Shareware CD-ROMs </a>
+                      </li>
+                      <li>
+                        <a href="#"> Software Capsules Compilation </a>
+                      </li>
+                      <li>
+                        <a href="#"> CD-ROM Images </a>
+                      </li>
+                      <li>
+                        <a href="#"> ZX Spectrum </a>
+                      </li>
+                      <li>
+                        <a href="#"> DOOM Level CD </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">Images</a>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="main">
+                    <p>Metropolitain Mu...</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/metropolitanmuseumofart-gallery"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Cleveland Muse...</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/clevelandart"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Featured</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> All Images </a>
+                      </li>
+                      <li>
+                        <a href="#"> This Just In </a>
+                      </li>
+                      <li>
+                        <a href="#"> Flickr Commons </a>
+                      </li>
+                      <li>
+                        <a href="#"> Occupy Wall Street Flickr </a>
+                      </li>
+                      <li>
+                        <a href="#"> Covert Art </a>
+                      </li>
+                      <li>
+                        <a href="#"> USGS Maps </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <p>Top</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> NASA Images Solar System Collection </a>
+                      </li>
+                      <li>
+                        <a href="#"> Solar System Collection </a>
+                      </li>
+                      <li>
+                        <a href="#"> Ames Research Center </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="main-section">
+      <div id="content">
+        <div class="volunteer">
+          <h1>Volunteer Positions</h1>
+          <p>
+            We could always use a hand- we can't ensure universal access to all
+            knowledge without your help. Whether it's helping Open Library
+            update their UI, setting up A/V equipment at Internet Archive
+            events, or helping the Wayback Machine archive even more of the
+            internet, you will have a permanent impact on our goal of free
+            access to all information for everyone.
+          </p>
+          <br />
+          <p>
+            When you volunteer for the Internet Archive, you get
+            behind-the-scenes access to a non-profit workplace with a big
+            mission. You'll get to work with a wide variety of people, ranging
+            from Archive staff to fellow volunteers from all walks of life.
+            You'll be able to refine your networking, event planning, and team
+            building skills while having fun, meeting new people, and attending
+            Archive events.
+          </p>
 
+          <h2>Volunteer as an Open Library Developer</h2>
 
-</head>
+          <p>
+            Learn how to contribute, find easy tasks, look at our roadmap, and
+            ask to join our community slack chat!
+          </p>
 
-<body>
-	<header>
-		<nav class="user-navbar">
-			<ul>
+          <p>
+            <a
+              href="https://github.com/internetarchive/openlibrary/blob/master/CONTRIBUTING.md"
+              >Getting Started with our Github</a
+            >
+          </p>
 
-				<li><a href="">Internet Archive</a></li>
-				<li><a href="">Sign up</a></li>
-				<li><a href="">Login</a></li>
-				<li><a href="">Upload</a></li>
-			</ul>
-		</nav>
+          <p>
+            <a
+              href="https://github.com/internetarchive/openlibrary/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22"
+              >Good First Issues</a
+            >
+          </p>
 
-		<nav class="main-navbar">
-			<ul>
-				<li><a href="">Web</a></li>
-				<li><a href="">Books</a></li>
-				<li><a href="">Video</a></li>
-				<li><a href="">Audio</a></li>
-				<li><a href="">Software</a></li>
-				<li><a href="">Images</a></li>
-			</ul>
-		</nav>
-	</header>
+          <p>
+            <a href="https://github.com/internetarchive/openlibrary/issues/686"
+              >Join the Open Library Slack Channel</a
+            >
+          </p>
 
-	<section>
-		<div class="search-bar">
-			<div class="row">
-				<input id="input-box" type="text" placeholder="Search the history of websites" value=""
-					autocomplete="off">
-				<button>
-					<i class="fa-solid fa-magnifying-glass"></i>
-				</button>
-			</div>
-			<div class="result-box" id="tableone">
-			</div>
+          <h2>Volunteering as an Open Librarian</h2>
+          <p>Want to make sure Open Library's data is pristine?</p>
+          <p>
+            <a href="https://openlibrary.org/about/lib"
+              >Learn about our standards</a
+            >
+          </p>
+          <p>
+            <a href="https://github.com/internetarchive/openlibrary-client"
+              >Write bots to merge and fix catalog records</a
+            >
+          </p>
 
-		</div>
-		<h2 onclick="makeGet()"> WAYBACK MACHINE</h2>
+          <h2>Volunteer at Special Events</h2>
 
-	</section>
-	<div class="col-md-9">
-		<h1>Volunteer Positions</h1>
-<p>We could always use a hand- we can't ensure universal access to all knowledge without your help. Whether it's helping Open Library update their UI, setting up A/V equipment at Internet Archive events, or helping the Wayback Machine archive even more of the internet, you will have a permanent impact on our goal of free access to all information for everyone.</p>
-<br>
-<p> When you volunteer for the Internet Archive, you get behind-the-scenes access to a non-profit workplace with a big mission. You'll get to work with a wide variety of people, ranging from Archive staff to fellow volunteers from all walks of life. You'll be able to refine your networking, event planning, and team building skills while having fun, meeting new people, and attending Archive events.</p>
+          <p>
+            Would you like to help the Internet Archive out with some of our
+            events?
+          </p>
 
-<a name="Open Library Volunteers"></a>
+          <p>
+            Volunteers are essential during our special events. We host around
+            30+ events annually, and volunteers provide crucial support by
+            engaging with guests, assisting with set-up and break down, A/V
+            support, and other exciting opportunities. Volunteers are expected
+            to be punctual and reliable and be flexible and cooperative with
+            staff, guests, and other volunteers. The majority of our events are
+            held in the San Francisco Bay Area, mostly at our headquarters in
+            San Francisco.
+          </p>
 
-<h2>Volunteer as an Open Library Developer</h2>
+          [ Due to COVID-19 closures, we are temporarily suspending Special
+          Event Volunteer applications. Please check back with us soon! ]
+        </div>
+      </div>
+    </div>
 
-<p>
-Learn how to contribute, find easy tasks, look at our roadmap, and ask to join our community slack chat!</p>
-
-<p><a href="https://github.com/internetarchive/openlibrary/blob/master/CONTRIBUTING.md">Getting Started with our Github</a> </p>
-
-<p><a href="https://github.com/internetarchive/openlibrary/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">Good First Issues</a> </p>
-
-<p><a href="https://github.com/internetarchive/openlibrary/issues/686">Join the Open Library Slack Channel</a> </p>
-
-<a name="Volunteer as an Open Librarian"></a>
-
-<h2>Volunteering as an Open Librarian</h2>
-<p>Want to make sure Open Library's data is pristine?</p>
-<p><a href="https://openlibrary.org/about/lib">Learn about our standards</a></p>
-<p><a href="https://github.com/internetarchive/openlibrary-client">Write bots to merge and fix catalog records</a></p>
-
-<h2>Volunteer at Special Events</h2>
-
-<p>
-Would you like to help the Internet Archive out with some of our events?</p>
-
-<p>Volunteers are essential during our special events. We host around 30+ events annually, and volunteers provide crucial support by engaging with guests, assisting with set-up and break down, A/V support, and other exciting opportunities. Volunteers are expected to be punctual and reliable and be flexible and cooperative with staff, guests, and other volunteers. The majority of our events are held in the San Francisco Bay Area, mostly at our headquarters in San Francisco. </p>
-
-[ Due to COVID-19 closures, we are temporarily suspending Special Event Volunteer applications. Please check back with us soon! ]
-
-  </div>
-	<footer>
-		<ul>
-			<li><a href="">About</a></li>
-			<li><a href="">Blog</a></li>
-			<li><a href="">Projects</a></li>
-			<li><a href="">Help</a></li>
-			<li><a href="">Donate</a></li>
-			<li><a href="">Contact</a></li>
-			<li><a href="">Jobs</a></li>
-			<li><a href="">Volunteer</a></li>
-			<li><a href="">People</a></li>
-		</ul>
-	</footer>
-</body>
-<script>
-	//     function makeGet(){
-	//       fetch('https://archive.org/wayback/available?url=google.com')
-	// .then(result => result.json())
-	// .then(data => {
-	//     let row = `<tr><th>Url</th><th>Archived snapshot</th><th>Timestamp</th></tr>`;
-	//         row += `<tr><td>${data.url}</td>
-	//             <td>${data.archived_snapshots.closest.url}</td>
-	//             <td>${data.archived_snapshots.closest.timestamp}</td>
-	//             </tr>`;
-	//     document.getElementById('tableone').innerHTML = row;
-	// console.log(data)})
-	// .catch(error => console.log('Error'))  
-	//     }
-	var inputBox = document.getElementById("input-box");
-	inputBox.onkeyup = function () {
-		var input = inputBox.value;
-		if (input.length != 0) {
-			fetch('/__wb/search/host?q=' + input)
-				.then(result => result.json())
-				.then(data => {
-					if (data.hosts.length != 0) {
-						let row = '';
-						for (i = 0; i < data.hosts.length; i++) {
-							displayName = data.hosts[i].display_name;
-							row += `<li>${displayName}</li>`;
-							document.getElementById('tableone').innerHTML = row;
-						}
-						document.getElementById('tableone').innerHTML = `<ul>${row}</ul>`;
-						console.log(data)
-					}
-					else {
-						// document.getElementById('tableone').innerHTML = `<ul><li>${input}</li></ul>`;
-						document.getElementById('tableone').innerHTML = ``;
-					}
-				})
-				.catch(error => console.log(error))
-		} else {
-			document.getElementById('tableone').innerHTML = '';
-		}
-	}
-
-
-
-
-
-
-</script>
-
+    <footer>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="people.html">People</a></li>
+      </ul>
+    </footer>
+  </body>
 </html>

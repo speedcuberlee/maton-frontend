@@ -1,0 +1,27 @@
+/* Styles for bio divs */
+div.bio>div {
+	/* Add a bottom border */
+	border-bottom: 1px solid gray;
+	/* Add padding */
+	padding: 10px 4px 10px 4px;
+	/* Clear floats to the left */
+	clear: left;
+	/* Set minimum height to 130px */
+	min-height: 130px;
+	/* Hide overflow */
+	overflow: hidden;
+}
+
+/* Styles for images within bio divs */
+div.bio>div img {
+	/* Float images to the left */
+	float: left;
+	/* Set width to 100px */
+	width: 100px;
+	/* Set maximum width to 100px */
+	max-width: 100px;
+	/* Add margin */
+	margin: 0 10px 10px 0;
+	/* Add border radius */
+	border-radius: 7px;
+}

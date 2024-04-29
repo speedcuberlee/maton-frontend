@@ -1,0 +1,95 @@
+/* Search bar styles */
+.search-bar {
+  /* Add border radius to make it rounded */
+  border-radius: 50px;
+  /* Add margin to center it horizontally */
+  margin: 50px auto 0;
+  /* Set width to 600px */
+  width: 600px;
+  /* Set background color to a light gray */
+  background-color: hsl(0, 0%, 60%);
+  /* Set text color to a darker gray */
+  color: hsl(0, 0%, 25%);
+  /* Remove border */
+  border: 0;
+}
+
+/* Row styles */
+.row {
+  /* Display as a flex container */
+  display: flex;
+  /* Align items to the center */
+  align-items: center;
+  /* Add padding */
+  padding: 10px 20px;
+}
+
+/* Input styles within rows */
+.row input {
+  /* Take up the remaining space */
+  flex: 1;
+  /* Set height to 50px */
+  height: 50px;
+  /* Make background transparent */
+  background: transparent;
+  /* Remove border */
+  border: 0;
+  /* Remove outline */
+  outline: 0;
+  /* Set font size to 18px */
+  font-size: 18px;
+}
+
+/* Button styles */
+button {
+  /* Make background transparent */
+  background: transparent;
+  /* Remove border */
+  border: 0;
+  /* Remove outline */
+  outline: 0;
+}
+
+/* Font awesome icon styles within buttons */
+button .fa-solid {
+  /* Set width to 25px */
+  width: 25px;
+  /* Set color to a dark gray */
+  color: #555;
+  /* Set font size to 22px */
+  font-size: 22px;
+  /* Set cursor to a pointer */
+  cursor: pointer;
+}
+
+/* Placeholder text styles */
+::placeholder {
+  /* Set color to a dark gray */
+  color: #555;
+}
+
+/* Result box styles */
+.result-box ul {
+  /* Add top border */
+  border-top: 1px solid #000;
+  /* Add padding */
+  padding: 15px 10px;
+}
+
+/* List item styles within result box */
+.result-box ul li {
+  /* Remove list style */
+  list-style: none;
+  /* Add border radius */
+  border-radius: 3px;
+  /* Add padding */
+  padding: 15px 10px;
+  /* Set cursor to a pointer */
+  cursor: pointer;
+}
+
+/* Hover styles for list items */
+.result-box ul li:hover {
+  /* Set background color to white */
+  background: white;
+}

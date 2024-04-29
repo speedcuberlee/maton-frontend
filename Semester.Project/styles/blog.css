@@ -1,0 +1,77 @@
+/* Style the post element */
+.post {
+  /* Set the width to 60% and center it horizontally */
+  width: 60%;
+  margin: 0px auto;
+}
+
+/* Style the h1 headings in the post */
+.post h1 {
+  /* Left-align the headings */
+  text-align: left;
+}
+
+/* Style the h2 headings in the post */
+.post h2 {
+  /* Left-align the headings */
+  text-align: left;
+}
+
+/* Style the paragraphs in the post */
+.post p {
+  /* Remove margin and set font size to 19px */
+  margin: 0;
+  font-size: 19px;
+}
+
+/* Style the images in the entry content */
+.entry-content img {
+  /* Set the width and height to 80% and 100% respectively */
+  width: 80%;
+  height: 100%;
+  /* Set the maximum width and height to 854px and 480px respectively */
+  max-width: 854px;
+  max-height: 480px;
+}
+
+/* Style the iframes in the entry content */
+.entry-content iframe {
+  /* Set the aspect ratio to 16:9 */
+  aspect-ratio: 16 / 9;
+  /* Set the width to 80% and height to auto */
+  width: 80%;
+  height: auto;
+  /* Set the maximum width and height to 854px and 480px respectively */
+  max-width: 854px;
+  max-height: 480px;
+}
+
+/* Style the list items in the workshop talks section */
+.workshop-talks li {
+  /* Set the left margin to 5% and top and bottom margins to 1% */
+  margin-left: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  /* Set the font size to 19px */
+  font-size: 19px;
+}
+
+/* Style the list items in the key areas section */
+.key-areas li {
+  /* Set the left margin to 5% and top and bottom margins to 1% */
+  margin-left: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  /* Set the font size to 19px */
+  font-size: 19px;
+}
+
+/* Style the list items in the initial signing section */
+.initial-signing li {
+  /* Set the left margin to 5% and top and bottom margins to 1% */
+  margin-left: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  /* Set the font size to 19px */
+  font-size: 19px;
+}

@@ -1,133 +1,833 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Internet Archive: About IA</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/mega-menu.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="background"></div>
-        <nav class="user-navbar">
-            <img id="logo-photo" src="images/Internet-Archive-Logo.jpg" width="50" height="50">
-            <div class="logo"><a href="#"> INTERNET ARCHIVE </a></div>
-            <ul>
-                <button><a href="registration/sign-up.html">Sign up</a></button>
-                <button><a href="registration/login.html">Login</a></button>
-                <button><a href="#">Upload</a></button>
-            </ul>
-        </nav>
-        <nav class="main-navbar">
-            <ul>
-                <li><a href="web.html">Web</a></li>
-                <li><a href="books.html">Books</a></li>
-                <li><a href="videos.html">Videos</a></li>
-                <li><a href="audio.html">Audio</a></li>
-                <li><a href="software.html">Software</a></li>
-                <li><a href="images.html">Images </a></li>
-            </ul>
-        </nav> 
-    </header>
-        <h1>About the Internet Archive</h1>
-        <img id="about-photo" src="images/about-photo.png" width="400" height="300">
-         <p class="para"> The Internet Archive, a 501(c)(3) non-profit, is building a digital library of Internet sites and other cultural artifacts in digital form. Like a paper library, we provide free access to researchers, historians, scholars, people with print disabilities, and the general public.
-            Our mission is to provide Universal Access to All Knowledge.</p>
-         <p class="para">We began in 1996 by archiving the Internet itself, a medium that was just beginning to grow in use. Like newspapers, the content published on the web was ephemeral - but unlike newspapers, no one was saving it.
-            Today we have 28+ years of web history accessible through the Wayback Machine and we work with 1,200+ library and other partners through our Archive-It program to identify important web pages.</p>
-        <p id="paragraph-3">As our web archive grew, so did our commitment to providing digital versions of other published works. Today our archive contains:</p>
-            <ul class="amount-of-pages">
-                <li>835 billion web pages</li>
-                <li>44 million books and texts</li>
-                <li>15 million audio recordings (including 255,000 live concerts)</li>
-                <li>10.6 million videos (including 2.6 million Television News programs)</li>
-                <li>4.8 million images</li>
-                <li>1 million software programs</li>
-            </ul>
-
-            <p class="para">Anyone with a free account can upload media to the Internet Archive. We work with thousands of partners globally to save copies of their work into special collections.</p>
-           
-            <p class="para">Because we are a library, we pay special attention to books. Not everyone has access to a public or academic library with a good collection, so to provide universal access we need to provide digital versions of books. We began a program to digitize books in 2005 and today we scan 4,400 books per day in 20 locations around the world. Books published in or prior to 1928 are available for download, and hundreds of thousands of modern books can be borrowed through our Open Library site. One of the Internet Archive's missions is to serve people who have difficulty interacting with physical books, so most of our digitized books are available to people with print disabilities (learn about access here).</p>
-            
-            <p class="para">Like the Internet, television is also an ephemeral medium. We began archiving television programs in late 2000, and our first public TV project was an archive of TV news surrounding the events of September 11, 2001. In 2009 we began to make selected U.S. television news broadcasts searchable by captions in our TV News Archive. This service allows researchers and the public to use television as a citable and sharable reference.</p>
-            
-            <p class="para"> The Internet Archive serves millions of people each day and is one of the top 300 web sites in the world. A single copy of the Internet Archive library collection occupies 145+ Petabytes of server space (and we store at least 2 copies of everything). We are funded through donations, grants, and by providing web archiving and book digitization services for our partners. As with most libraries we value the privacy of our patrons, so we avoid keeping the IP (Internet Protocol) addresses of our readers and offer our site in https (secure) protocol.</p>
-            
-            <p class="para">You can find information about our projects on our blog (including important announcements), contact us, buy swag in our store, and follow us on Twitter and Facebook. Welcome to the library!</p>
-
-            <p class="para"> Generous funding has come from Foundations including:</p>
-            <ul class="foundations">
-                <li>Andrew W. Mellon Foundation</li>
-                <li>Council on Library and Information Resources</li>
-                <li>Democracy Fund</li>
-                <li>Federal Communications Commission Universal Service Program for Schools and Libraries (E-Rate)</li>
-                <li>Institute of Museum and Library Services (IMLS)</li>
-                <li>Knight Foundation</li>
-                <li>Laura and John Arnold Foundation</li>
-                <li>National Endowment for the Humanities, Office of Digital Humanities</li>
-                <li>National Science Foundation</li>
-                <li>The Peter and Carmen Lucia Buck Foundation</li>
-                <li>The Philadelphia Foundation</li>
-                <li>Rita Allen Foundation</li>
-            </ul>
-
-            <p class="para">The Internet Archive is a member of:</p>
-            <ul class="members">
-                <li>American Library Association (ALA)</li>
-                <li>Association for Recorded Sound Collections (ARSC)</li>
-                <li>Biodiversity Heritage Library (BHL)</li>
-                <li>Boston Library Consortium (BLC)</li>
-                <li>Califa</li>
-                <li>Council on Library and Information Resources (CLIR)</li>
-                <li>Coalition for Networked Information (CNI)</li>
-                <li>Digital Library Federation (DLF)</li>
-                <li>Digital Preservation Coalition (DPC)</li>
-                <li>Digital Public Library of America (DPLA)</li>
-                <li>International Federation of Library Associations and Institutions (IFLA)</li>
-                <li>International Internet Preservation Consortium (IIPC)</li>
-                <li>Music Library Association</li>
-                <li>National Digital Stewardship Alliance (NDSA)</li>
-                <li>ReShare</li>
-            </ul>
-
-            <h2>Read More</h2>
-            <ul class="options">
-                <li>Job Opportunities at the Internet Archive</li>
-                <li>Events</li>
-                <li>Terms of Service (updated 12/31/2014)</li>
-            </ul>
-
-            <h3>News</h3>
-            <ul class="stories">
-                <li> Guernica editor Jina Moore quits after magazine retracts Israeli writer's essay</li>
-                <li>The Internet Archive Just Backed Up an Entire Caribbean Island</li>
-                <li>Zero Retries 0146</li>
-                <li>Bing Search tests removing cache link</li>
-                <li>FBI Gate Crash Suspect Loved Trump and Pushed QAnon on Social Media</li>
-                <li>MSN</li>
-                <li>Fake AI law firms are sending fake DMCA threats to generate fake SEO gains</li>
-                <li>Why Nintendo Doesn't Want You Using Emulators To Play Its Games</li>
-                <li>Fake Lawsuit Threat Exposes Privnote Phishing Sites</li>
-                <li>QAnon believer who crashed SUV into FBI building wrote 'I love you' to Trump</li>
-                <li>[more]</li>
-            </ul>
-    <footer>
+      <div class="background"></div>
+      <nav class="user-navbar">
+        <a href="home.html"
+          ><img
+            id="logo-photo"
+            src="images/internet-archive-logo.jpg"
+            width="50"
+            height="50"
+            alt=""
+        /></a>
+        <div class="logo"><a href="home.html"> INTERNET ARCHIVE </a></div>
         <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Help</a></li>
-            <li><a href="">Donate</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Jobs</a></li>
-            <li><a href="">Volunteer</a></li>
-            <li><a href="">People</a></li>
+          <li>
+            <a href="registration/sign-up.html">Sign up</a>
+          </li>
+          <li>
+            <a href="registration/login.html">Login</a>
+          </li>
+          <li>
+            <a href="upload-file/upload.html">Upload</a>
+          </li>
         </ul>
-    </footer>
-</body>
+      </nav>
+      <nav>
+        <div class="wrapper">
+          <ul class="nav-links">
+            <li>
+              <a href="#">Web</a>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="main">
+                    <p>
+                      Search the history of over 866 billion web pages on the
+                      Internet.
+                    </p>
+                    <fieldset>
+                      <img src="images/wayback.svg" alt="" />
+                      <label for="url"></label>
+                      <div class="search-field">
+                        <input
+                          type="text"
+                          name="url"
+                          id="url"
+                          placeholder="enter URL or keywords"
+                        />
+                        <button>
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div class="main">
+                    <p>Mobile Apps</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> Wayback Machine (iOS) </a>
+                      </li>
+                      <li>
+                        <a href="#"> Wayback Machine(Android) </a>
+                      </li>
+                      <li>
+                        <a href="#"> Browser Extensions </a>
+                      </li>
+                      <li>
+                        <a href="#"> Chrome </a>
+                      </li>
+                      <li>
+                        <a href="#"> Firefox </a>
+                      </li>
+                      <li>
+                        <a href="#"> Safari </a>
+                      </li>
+                      <li>
+                        <a href="#"> Edge </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <p>Archive-It Subscription</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> Explore the Collections </a>
+                      </li>
+                      <li>
+                        <a href="#"> Learn More </a>
+                      </li>
+                      <li>
+                        <a href="#"> Build Collections </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <p>Save Page Now</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#">
+                          Capture a web page as it appears now for use as a
+                          trusted citation in the furture.
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="style-scope save-page-form">
+                      <input
+                        type="text"
+                        name="url_preload"
+                        placeholder="https://"
+                        class="style-scope save-page-form"
+                      />
+                      <input
+                        type="submit"
+                        value="Save"
+                        class="style-scope save-page-form"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">Books</a>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="main">
+                    <p>Books to Borrow</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/images/book-lend.png"
+                      alt="leading photo"
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Open Library</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/images/widgetOL.png"
+                      alt="open library photo"
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Featured</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> All Books </a>
+                      </li>
+                      <li>
+                        <a href="#"> All Texts </a>
+                      </li>
+                      <li>
+                        <a href="#"> This Just In </a>
+                      </li>
+                      <li>
+                        <a href="#"> Smithsonian Libraries </a>
+                      </li>
+                      <li>
+                        <a href="#"> FEDLINK (US) </a>
+                      </li>
+                      <li>
+                        <a href="#"> Genealogy </a>
+                      </li>
+                      <li>
+                        <a href="#"> Lincoln Collection </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <p>Top</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> American Libraries </a>
+                      </li>
+                      <li>
+                        <a href="#"> Canadian Libraries </a>
+                      </li>
+                      <li>
+                        <a href="#"> Universal Library </a>
+                      </li>
+                      <li>
+                        <a href="#"> Project Guttenberg </a>
+                      </li>
+                      <li>
+                        <a href="#"> Children's Library </a>
+                      </li>
+                      <li>
+                        <a href="#"> Biodiversity Heritage Library </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <ul class="mega-links">
+                      <li><a href="#">Addtional Collections</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">Video</a>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="main">
+                    <p>TV News</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/tv"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Understanding 9...</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/911"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Featured</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> All Video </a>
+                      </li>
+                      <li>
+                        <a href="#"> This Just in </a>
+                      </li>
+                      <li>
+                        <a href="#"> Prelinger Archives </a>
+                      </li>
+                      <li>
+                        <a href="#"> Democracy Now! </a>
+                      </li>
+                      <li>
+                        <a href="#"> Occupy Wall Street </a>
+                      </li>
+                      <li>
+                        <a href="#"> TV NSA Clip Library </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <p>Top</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> Animation & Cartoons </a>
+                      </li>
+                      <li>
+                        <a href="#"> Arts & Music </a>
+                      </li>
+                      <li>
+                        <a href="#"> Computer & Technology </a>
+                      </li>
+                      <li>
+                        <a href="#"> Cultural & Academic Flims </a>
+                      </li>
+                      <li>
+                        <a href="#"> Ephemeral Flims </a>
+                      </li>
+                      <li>
+                        <a href="#"> Movies </a>
+                      </li>
+                      <li>
+                        <a href="#"> New & Public Affairs </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> Spirituality & Religon </a>
+                      </li>
+                      <li>
+                        <a href="#"> Sports Videos </a>
+                      </li>
+                      <li>
+                        <a href="#"> Television </a>
+                      </li>
+                      <li>
+                        <a href="#"> Videogame Videos </a>
+                      </li>
+                      <li>
+                        <a href="#"> Vlogs </a>
+                      </li>
+                      <li>
+                        <a href="#"> Youth Media </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">Audio</a>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="main">
+                    <p>Live Music Archive</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/etree"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Librivox Free Audio</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/librivoxaudio"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Featured</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> All Audio </a>
+                      </li>
+                      <li>
+                        <a href="#"> This Just In </a>
+                      </li>
+                      <li>
+                        <a href="#"> Gateful Dead </a>
+                      </li>
+                      <li>
+                        <a href="#"> Netlabels </a>
+                      </li>
+                      <li>
+                        <a href="#"> Old Time Radio </a>
+                      </li>
+                      <li>
+                        <a href="#"> 78 RPMs and Cylinder Rec... </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <p>Top</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> Audio Books & Poetry </a>
+                      </li>
+                      <li>
+                        <a href="#"> Computers, Technology and ... </a>
+                      </li>
+                      <li>
+                        <a href="#"> Music, Arts & Culture </a>
+                      </li>
+                      <li>
+                        <a href="#"> News & Public Affairs </a>
+                      </li>
+                      <li>
+                        <a href="#"> Spirituality & Religon </a>
+                      </li>
+                      <li>
+                        <a href="#"> Podcasts </a>
+                      </li>
+                      <li>
+                        <a href="#"> Radio News Archive </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">Software</a>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="main">
+                    <p>Internet Arcade</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/internetarcade"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Console Living R...</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/consolelivingroom"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Featured</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> All Software </a>
+                      </li>
+                      <li>
+                        <a href="#"> This Just In </a>
+                      </li>
+                      <li>
+                        <a href="#"> Old School Emulation </a>
+                      </li>
+                      <li>
+                        <a href="#"> MS-DOS Games </a>
+                      </li>
+                      <li>
+                        <a href="#"> Historical Software </a>
+                      </li>
+                      <li>
+                        <a href="#"> Classic PC Games </a>
+                      </li>
+                      <li>
+                        <a href="#"> Software Library </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <p>Top</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> Kodi Archive and Support File </a>
+                      </li>
+                      <li>
+                        <a href="#"> Vintage Software </a>
+                      </li>
+                      <li>
+                        <a href="#"> APK </a>
+                      </li>
+                      <li>
+                        <a href="#"> MS-DOS </a>
+                      </li>
+                      <li>
+                        <a href="#"> CD-ROM Software </a>
+                      </li>
+                      <li>
+                        <a href="#"> CD-ROM Software Library </a>
+                      </li>
+                      <li>
+                        <a href="#"> Software Sites </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> Tucows Software Library </a>
+                      </li>
+                      <li>
+                        <a href="#"> Shareware CD-ROMs </a>
+                      </li>
+                      <li>
+                        <a href="#"> Software Capsules Compilation </a>
+                      </li>
+                      <li>
+                        <a href="#"> CD-ROM Images </a>
+                      </li>
+                      <li>
+                        <a href="#"> ZX Spectrum </a>
+                      </li>
+                      <li>
+                        <a href="#"> DOOM Level CD </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">Images</a>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="main">
+                    <p>Metropolitain Mu...</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/metropolitanmuseumofart-gallery"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Cleveland Muse...</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/clevelandart"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Featured</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> All Images </a>
+                      </li>
+                      <li>
+                        <a href="#"> This Just In </a>
+                      </li>
+                      <li>
+                        <a href="#"> Flickr Commons </a>
+                      </li>
+                      <li>
+                        <a href="#"> Occupy Wall Street Flickr </a>
+                      </li>
+                      <li>
+                        <a href="#"> Covert Art </a>
+                      </li>
+                      <li>
+                        <a href="#"> USGS Maps </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <p>Top</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> NASA Images Solar System Collection </a>
+                      </li>
+                      <li>
+                        <a href="#"> Solar System Collection </a>
+                      </li>
+                      <li>
+                        <a href="#"> Ames Research Center </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="main-section">
+      <div id="content">
+        <h1>About the Internet Archive</h1>
+        <img
+          id="about-photo"
+          src="images/about-photo.png"
+          alt="about photo"
+          width="400"
+          height="300"
+        />
+        <p class="para">
+          The Internet Archive, a 501(c)(3) non-profit, is building a digital
+          library of Internet sites and other cultural artifacts in digital
+          form. Like a paper library, we provide free access to researchers,
+          historians, scholars, people with print disabilities, and the general
+          public. Our mission is to provide Universal Access to All Knowledge.
+        </p>
+        <p class="para">
+          We began in 1996 by archiving the Internet itself, a medium that was
+          just beginning to grow in use. Like newspapers, the content published
+          on the web was ephemeral - but unlike newspapers, no one was saving
+          it. Today we have 28+ years of web history accessible through the
+          <a href="">Wayback Machine</a> and we work with 1,200+ library and
+          other partners through our <a href="">Archive-It</a> program to
+          identify important web pages.
+        </p>
+        <p id="paragraph-3">
+          As our web archive grew, so did our commitment to providing digital
+          versions of other published works. Today our archive contains:
+        </p>
+        <ul class="amount-of-pages">
+          <li>835 billion <a href="">web pages</a></li>
+          <li>44 million <a href="">books and texts</a></li>
+          <li>
+            15 million <a href="">audio recordings</a> (including 255,000
+            <a href="">live concerts</a>)
+          </li>
+          <li>
+            10.6 million <a href="">videos</a> (including 2.6 million
+            <a href="">Television News programs</a>)
+          </li>
+          <li>4.8 million <a href="">images</a></li>
+          <li>1 million <a href="">software programs</a></li>
+        </ul>
 
+        <p class="para">
+          Anyone with a <a href="">free account</a> can
+          <a href="">upload media</a> to the Internet Archive. We work with
+          thousands of partners globally to save copies of their work into
+          special collections.
+        </p>
+
+        <p class="para">
+          Because we are a library, we pay special attention to books. Not
+          everyone has access to a public or academic library with a good
+          collection, so to provide universal access we need to provide digital
+          versions of books. We began a program to digitize books in 2005 and
+          today we scan 4,400 books per day in 20 locations around the world.
+          Books published in or prior to 1928 are available for download, and
+          hundreds of thousands of
+          <a href="">modern books can be borrowed</a> through our
+          <a href="">Open Library</a> site. One of the Internet Archive's
+          missions is to serve people who have difficulty interacting with
+          physical books, so most of our digitized books are available to people
+          with <a href="">print disabilities</a> (learn about access
+          <a href="">here</a>).
+        </p>
+
+        <p class="para">
+          Like the Internet, television is also an ephemeral medium. We began
+          archiving television programs in late 2000, and our first public TV
+          project was an archive of
+          <a href="">TV news surrounding the events of September 11, 2001</a>.
+          In 2009 we began to make selected U.S. television news broadcasts
+          searchable by captions in our <a href="">TV News Archive</a>. This
+          service allows researchers and the public to use television as a
+          citable and sharable reference.
+        </p>
+
+        <p class="para">
+          The Internet Archive serves millions of people each day and is one of
+          the top 300 web sites in the world. A single copy of the Internet
+          Archive library collection occupies 145+ Petabytes of server space
+          (and we store at least 2 copies of everything). We are funded through
+          <a href="">donations</a>, grants, and by providing web archiving and
+          <a href="">book digitization services</a> for our partners. As with
+          most libraries we value the <a href="">privacy of our patrons</a>, so
+          we avoid keeping the IP (Internet Protocol) addresses of our readers
+          and offer our site in https (secure) protocol.
+        </p>
+
+        <p class="para">
+          You can find information about our projects on our
+          <a href="">blog</a> (including important
+          <a href="">announcements</a>), <a href="">contact us</a>, buy swag in
+          our <a href="">store</a>, and follow us on <a href="">Twitter</a> and
+          <a href="">Facebook</a>. Welcome to the library!
+        </p>
+
+        <p class="para">
+          Generous funding has come from Foundations including:
+        </p>
+        <ul class="foundations">
+          <li>
+            <a href="https://www.mellon.org/">Andrew W. Mellon Foundation</a>
+          </li>
+          <li>
+            <a href="https://www.clir.org/"
+              >Council on Library and Information Resources</a
+            >
+          </li>
+          <li><a href="https://www.democracyfund.org/">Democracy Fund</a></li>
+          <li>
+            <a
+              href="https://www.fcc.gov/funding-programs/universal-service-program-usp"
+              >Federal Communications Commission Universal Service Program for
+              Schools and Libraries (E-Rate)</a
+            >
+          </li>
+          <li>
+            <a href="https://www.imls.gov/"
+              >Institute of Museum and Library Services (IMLS)</a
+            >
+          </li>
+          <li>
+            <a href="https://www.knightfoundation.org/">Knight Foundation</a>
+          </li>
+          <li>
+            <a href="https://www.arnoldfoundation.org/"
+              >Laura and John Arnold Foundation</a
+            >
+          </li>
+          <li>
+            <a href="https://www.neh.gov/divisions/odh"
+              >National Endowment for the Humanities, Office of Digital
+              Humanities</a
+            >
+          </li>
+          <li>
+            <a href="https://www.nsf.gov/">National Science Foundation</a>
+          </li>
+          <li>
+            <a href="https://www.buckfoundation.org/"
+              >The Peter and Carmen Lucia Buck Foundation</a
+            >
+          </li>
+          <li>
+            <a href="https://www.philadelphiafoundation.org/"
+              >The Philadelphia Foundation</a
+            >
+          </li>
+          <li>
+            <a href="https://www.ritaallen.org/">Rita Allen Foundation</a>
+          </li>
+        </ul>
+
+        <p class="para">The Internet Archive is a member of:</p>
+        <ul class="members">
+          <li>
+            <a href="https://www.ala.org/"
+              >American Library Association (ALA)</a
+            >
+          </li>
+          <li>
+            <a href="https://www.arsc.org/"
+              >Association for Recorded Sound Collections (ARSC)</a
+            >
+          </li>
+          <li>
+            <a href="https://www.biodiversitylibrary.org/"
+              >Biodiversity Heritage Library (BHL)</a
+            >
+          </li>
+          <li>
+            <a href="https://www.blc.org/">Boston Library Consortium (BLC)</a>
+          </li>
+          <li><a href="https://www.califa.org/">Califa</a></li>
+          <li>
+            <a href="https://www.clir.org/"
+              >Council on Library and Information Resources (CLIR)</a
+            >
+          </li>
+          <li>
+            <a href="https://www.cni.org/"
+              >Coalition for Networked Information (CNI)</a
+            >
+          </li>
+          <li>
+            <a href="https://www.diglib.org/"
+              >Digital Library Federation (DLF)</a
+            >
+          </li>
+          <li>
+            <a href="https://www.dpconline.org/"
+              >Digital Preservation Coalition (DPC)</a
+            >
+          </li>
+          <li>
+            <a href="https://dp.la/"
+              >Digital Public Library of America (DPLA)</a
+            >
+          </li>
+          <li>
+            <a href="https://www.ifla.org/"
+              >International Federation of Library Associations and Institutions
+              (IFLA)</a
+            >
+          </li>
+          <li>
+            <a href="https://www.iiif.io/"
+              >International Internet Preservation Consortium (IIPC)</a
+            >
+          </li>
+          <li><a href="https://www.mla.org/">Music Library Association</a></li>
+          <li>
+            <a href="https://www.ndsa.org/"
+              >National Digital Stewardship Alliance (NDSA)</a
+            >
+          </li>
+          <li><a href="https://reshare-alliance.org/">ReShare</a></li>
+        </ul>
+
+        <h2>Read More</h2>
+        <ul class="options">
+          <li><a href="#">Job Opportunities at the Internet Archive</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Terms of Service (updated 12/31/2014)</a></li>
+        </ul>
+
+        <h3>News</h3>
+        <ul class="stories">
+          <li>
+            <a href=""
+              >Guernica editor Jina Moore quits after magazine retracts Israeli
+              writer's essay</a
+            >
+          </li>
+          <li>
+            <a href=""
+              >The Internet Archive Just Backed Up an Entire Caribbean Island</a
+            >
+          </li>
+          <li><a href="">Zero Retries 0146</a></li>
+          <li><a href="">Bing Search tests removing cache link</a></li>
+          <li>
+            <a href=""
+              >FBI Gate Crash Suspect Loved Trump and Pushed QAnon on Social
+              Media</a
+            >
+          </li>
+          <li><a href="">MSN</a></li>
+          <li>
+            <a href=""
+              >Fake AI law firms are sending fake DMCA threats to generate fake
+              SEO gains</a
+            >
+          </li>
+          <li>
+            <a href=""
+              >Why Nintendo Doesn't Want You Using Emulators To Play Its
+              Games</a
+            >
+          </li>
+          <li>
+            <a href="">Fake Lawsuit Threat Exposes Privnote Phishing Sites</a>
+          </li>
+          <li>
+            <a href=""
+              >QAnon believer who crashed SUV into FBI building wrote 'I love
+              you' to Trump</a
+            >
+          </li>
+          <li><a href="">[more]</a></li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="people.html">People</a></li>
+      </ul>
+    </footer>
+  </body>
 </html>

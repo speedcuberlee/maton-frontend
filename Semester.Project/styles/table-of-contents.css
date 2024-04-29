@@ -1,0 +1,41 @@
+/* Style table of contents */
+.toc {
+  min-width: min-content; /* Set minimum width to fit content */
+  padding: 24px; /* Add padding */
+  overflow: scroll; /* Add scrollbar */
+}
+
+/* Style list group item links */
+.list-group-item a {
+  text-decoration: none; /* Remove underline from link */
+  color: white; /* Set link color to white */
+}
+
+/* Style list group item links on hover */
+.list-group-item a:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: white; /* Keep link color white on hover */
+}
+
+/* Style list group subitems */
+.list-group-subitem {
+  margin-left: 24px; /* Add margin left */
+  list-style: none; /* Remove bullet points */
+}
+
+/* Style list group subitem links */
+.list-group-subitem a {
+  color: white; /* Set link color to white */
+  text-decoration: none; /* Remove underline from link */
+}
+
+/* Style list group subitem links on hover */
+.list-group-subitem a:hover {
+  color: white; /* Keep link color white on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Style active links */
+a.active {
+  text-decoration: underline; /* Add underline to active links */
+}

@@ -1,0 +1,71 @@
+/* Main thing styles */
+.main-thing {
+  /* Set height to 100% of viewport height minus 146px */
+  height: calc(100vh - 146px);
+  /* Allow vertical scrolling if content exceeds height */
+  overflow: scroll;
+}
+
+/* Main thing heading styles */
+.main-thing h1 {
+  /* Align text to the left */
+  text-align: left;
+}
+
+/* My tabs styles */
+.mytabs {
+  /* Display as a flex container */
+  display: flex;
+  /* Allow flex items to wrap to the next line */
+  flex-wrap: wrap;
+  /* Set maximum width to 80% */
+  max-width: 80%;
+  /* Center horizontally and add margin and padding */
+  margin: 50px auto;
+  padding: 25px;
+}
+
+/* Hide radio buttons */
+.mytabs input[type="radio"] {
+  display: none;
+}
+
+/* Style labels */
+.mytabs label {
+  /* Add padding to all sides */
+  padding: 25px;
+  /* Set background color to green */
+  background: green;
+  /* Set font weight to bold */
+  font-weight: bold;
+}
+
+/* Tab styles */
+.mytabs .tab {
+  /* Set width to 100% */
+  width: 100%;
+  /* Add padding to all sides */
+  padding: 20px;
+  /* Set background color to #0000df */
+  background: #0000df;
+  /* Set order to 1 */
+  order: 1;
+  /* Hide by default */
+  display: none;
+}
+
+/* Show tab when radio button is checked */
+.mytabs input[type='radio']:checked+label+.tab {
+  display: initial;
+}
+
+/* Change label background color when radio button is checked */
+.mytabs input[type="radio"]:checked+label {
+  background: #0000df;
+}
+
+/* List item styles */
+.tab li {
+  /* Remove list style */
+  list-style: none;
+}

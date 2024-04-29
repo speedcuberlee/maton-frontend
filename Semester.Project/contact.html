@@ -1,178 +1,801 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internet Archive: Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/mega-menu.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internet Archive: Contact </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
-</head>
-
-<body>
+  <body>
     <header>
-        <div class="background"></div>
-        <nav class="user-navbar">
-            <img id="logo-photo" src="images/Internet-Archive-Logo.jpg" width="50" height="50">
-            <div class="logo"><a href="#"> INTERNET ARCHIVE </a></div>
-            <ul>
-                <button><a href="registration/sign-up.html">Sign up</a></button>
-                <button><a href="registration/login.html">Login</a></button>
-                <button><a href="upload-file/upload.html">Upload</a></button>
-            </ul>
-        </nav>
-        <nav class="main-navbar">
-            <ul>
-                <li><a href="web.html">Web</a></li>
-                <li><a href="books.html">Books</a></li>
-                <li><a href="videos.html">Videos</a></li>
-                <li><a href="audio.html">Audio</a></li>
-                <li><a href="software.html">Software</a></li>
-                <li><a href="images.html">Images </a></li>
-            </ul>
-        </nav> 
+      <div class="background"></div>
+      <nav class="user-navbar">
+        <a href="home.html"
+          ><img
+            id="logo-photo"
+            src="images/internet-archive-logo.jpg"
+            width="50"
+            height="50"
+            alt=""
+        /></a>
+        <div class="logo"><a href="home.html"> INTERNET ARCHIVE </a></div>
+        <ul>
+          <li>
+            <a href="registration/sign-up.html">Sign up</a>
+          </li>
+          <li>
+            <a href="registration/login.html">Login</a>
+          </li>
+          <li>
+            <a href="upload-file/upload.html">Upload</a>
+          </li>
+        </ul>
+      </nav>
+      <nav>
+        <div class="wrapper">
+          <ul class="nav-links">
+            <li>
+              <a href="#">Web</a>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="main">
+                    <p>
+                      Search the history of over 866 billion web pages on the
+                      Internet.
+                    </p>
+                    <fieldset>
+                      <img src="images/wayback.svg" alt="" />
+                      <label for="url"></label>
+                      <div class="search-field">
+                        <input
+                          type="text"
+                          name="url"
+                          id="url"
+                          placeholder="enter URL or keywords"
+                        />
+                        <button>
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div class="main">
+                    <p>Mobile Apps</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> Wayback Machine (iOS) </a>
+                      </li>
+                      <li>
+                        <a href="#"> Wayback Machine(Android) </a>
+                      </li>
+                      <li>
+                        <a href="#"> Browser Extensions </a>
+                      </li>
+                      <li>
+                        <a href="#"> Chrome </a>
+                      </li>
+                      <li>
+                        <a href="#"> Firefox </a>
+                      </li>
+                      <li>
+                        <a href="#"> Safari </a>
+                      </li>
+                      <li>
+                        <a href="#"> Edge </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <p>Archive-It Subscription</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> Explore the Collections </a>
+                      </li>
+                      <li>
+                        <a href="#"> Learn More </a>
+                      </li>
+                      <li>
+                        <a href="#"> Build Collections </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <p>Save Page Now</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#">
+                          Capture a web page as it appears now for use as a
+                          trusted citation in the furture.
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="style-scope save-page-form">
+                      <input
+                        type="text"
+                        name="url_preload"
+                        placeholder="https://"
+                        class="style-scope save-page-form"
+                      />
+                      <input
+                        type="submit"
+                        value="Save"
+                        class="style-scope save-page-form"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">Books</a>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="main">
+                    <p>Books to Borrow</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/images/book-lend.png"
+                      alt="leading photo"
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Open Library</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/images/widgetOL.png"
+                      alt="open library photo"
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Featured</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> All Books </a>
+                      </li>
+                      <li>
+                        <a href="#"> All Texts </a>
+                      </li>
+                      <li>
+                        <a href="#"> This Just In </a>
+                      </li>
+                      <li>
+                        <a href="#"> Smithsonian Libraries </a>
+                      </li>
+                      <li>
+                        <a href="#"> FEDLINK (US) </a>
+                      </li>
+                      <li>
+                        <a href="#"> Genealogy </a>
+                      </li>
+                      <li>
+                        <a href="#"> Lincoln Collection </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <p>Top</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> American Libraries </a>
+                      </li>
+                      <li>
+                        <a href="#"> Canadian Libraries </a>
+                      </li>
+                      <li>
+                        <a href="#"> Universal Library </a>
+                      </li>
+                      <li>
+                        <a href="#"> Project Guttenberg </a>
+                      </li>
+                      <li>
+                        <a href="#"> Children's Library </a>
+                      </li>
+                      <li>
+                        <a href="#"> Biodiversity Heritage Library </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <ul class="mega-links">
+                      <li><a href="#">Addtional Collections</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">Video</a>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="main">
+                    <p>TV News</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/tv"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Understanding 9...</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/911"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Featured</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> All Video </a>
+                      </li>
+                      <li>
+                        <a href="#"> This Just in </a>
+                      </li>
+                      <li>
+                        <a href="#"> Prelinger Archives </a>
+                      </li>
+                      <li>
+                        <a href="#"> Democracy Now! </a>
+                      </li>
+                      <li>
+                        <a href="#"> Occupy Wall Street </a>
+                      </li>
+                      <li>
+                        <a href="#"> TV NSA Clip Library </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <p>Top</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> Animation & Cartoons </a>
+                      </li>
+                      <li>
+                        <a href="#"> Arts & Music </a>
+                      </li>
+                      <li>
+                        <a href="#"> Computer & Technology </a>
+                      </li>
+                      <li>
+                        <a href="#"> Cultural & Academic Flims </a>
+                      </li>
+                      <li>
+                        <a href="#"> Ephemeral Flims </a>
+                      </li>
+                      <li>
+                        <a href="#"> Movies </a>
+                      </li>
+                      <li>
+                        <a href="#"> New & Public Affairs </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> Spirituality & Religon </a>
+                      </li>
+                      <li>
+                        <a href="#"> Sports Videos </a>
+                      </li>
+                      <li>
+                        <a href="#"> Television </a>
+                      </li>
+                      <li>
+                        <a href="#"> Videogame Videos </a>
+                      </li>
+                      <li>
+                        <a href="#"> Vlogs </a>
+                      </li>
+                      <li>
+                        <a href="#"> Youth Media </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">Audio</a>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="main">
+                    <p>Live Music Archive</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/etree"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Librivox Free Audio</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/librivoxaudio"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Featured</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> All Audio </a>
+                      </li>
+                      <li>
+                        <a href="#"> This Just In </a>
+                      </li>
+                      <li>
+                        <a href="#"> Gateful Dead </a>
+                      </li>
+                      <li>
+                        <a href="#"> Netlabels </a>
+                      </li>
+                      <li>
+                        <a href="#"> Old Time Radio </a>
+                      </li>
+                      <li>
+                        <a href="#"> 78 RPMs and Cylinder Rec... </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <p>Top</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> Audio Books & Poetry </a>
+                      </li>
+                      <li>
+                        <a href="#"> Computers, Technology and ... </a>
+                      </li>
+                      <li>
+                        <a href="#"> Music, Arts & Culture </a>
+                      </li>
+                      <li>
+                        <a href="#"> News & Public Affairs </a>
+                      </li>
+                      <li>
+                        <a href="#"> Spirituality & Religon </a>
+                      </li>
+                      <li>
+                        <a href="#"> Podcasts </a>
+                      </li>
+                      <li>
+                        <a href="#"> Radio News Archive </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">Software</a>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="main">
+                    <p>Internet Arcade</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/internetarcade"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Console Living R...</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/consolelivingroom"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Featured</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> All Software </a>
+                      </li>
+                      <li>
+                        <a href="#"> This Just In </a>
+                      </li>
+                      <li>
+                        <a href="#"> Old School Emulation </a>
+                      </li>
+                      <li>
+                        <a href="#"> MS-DOS Games </a>
+                      </li>
+                      <li>
+                        <a href="#"> Historical Software </a>
+                      </li>
+                      <li>
+                        <a href="#"> Classic PC Games </a>
+                      </li>
+                      <li>
+                        <a href="#"> Software Library </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <p>Top</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> Kodi Archive and Support File </a>
+                      </li>
+                      <li>
+                        <a href="#"> Vintage Software </a>
+                      </li>
+                      <li>
+                        <a href="#"> APK </a>
+                      </li>
+                      <li>
+                        <a href="#"> MS-DOS </a>
+                      </li>
+                      <li>
+                        <a href="#"> CD-ROM Software </a>
+                      </li>
+                      <li>
+                        <a href="#"> CD-ROM Software Library </a>
+                      </li>
+                      <li>
+                        <a href="#"> Software Sites </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> Tucows Software Library </a>
+                      </li>
+                      <li>
+                        <a href="#"> Shareware CD-ROMs </a>
+                      </li>
+                      <li>
+                        <a href="#"> Software Capsules Compilation </a>
+                      </li>
+                      <li>
+                        <a href="#"> CD-ROM Images </a>
+                      </li>
+                      <li>
+                        <a href="#"> ZX Spectrum </a>
+                      </li>
+                      <li>
+                        <a href="#"> DOOM Level CD </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">Images</a>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="main">
+                    <p>Metropolitain Mu...</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/metropolitanmuseumofart-gallery"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Cleveland Muse...</p>
+                    <img
+                      class="mega-image"
+                      src="https://archive.org/services/img/clevelandart"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main">
+                    <p>Featured</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> All Images </a>
+                      </li>
+                      <li>
+                        <a href="#"> This Just In </a>
+                      </li>
+                      <li>
+                        <a href="#"> Flickr Commons </a>
+                      </li>
+                      <li>
+                        <a href="#"> Occupy Wall Street Flickr </a>
+                      </li>
+                      <li>
+                        <a href="#"> Covert Art </a>
+                      </li>
+                      <li>
+                        <a href="#"> USGS Maps </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main">
+                    <p>Top</p>
+                    <ul class="mega-links">
+                      <li>
+                        <a href="#"> NASA Images Solar System Collection </a>
+                      </li>
+                      <li>
+                        <a href="#"> Solar System Collection </a>
+                      </li>
+                      <li>
+                        <a href="#"> Ames Research Center </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <h1>Contacts at the Internet Archive</h1>
-    <p class="header-contact">Internet Archive</p>
-    <ul class="contact">
-        <li>300 Funston Avenue</li>
-        <li>San Francisco, CA 94118</li>
-        <li>Tel: 415-561-6767 (administrative office line, see below for technical questions)</li>
-        <li>Fax: 415-840-0391</li>
-        <li>Tours and Open most Friday afternoons 1:15pm and by appointment.</li>
-        <li>directions to SF location</li>
-        <li>directions to Richmond location</li>
-    </ul>
-    
-    <p class="header-contact">If you have questions, please check our:</p>
-    <ul class="contact">
-        <li>Help Center</li>
-        <li>Forums</li>
-        <li>Developer Portal</li>
-        <p class="contact-para">If you cannot find your answer in the resources above, please email info@archive.org(Please enable email from @archive.org if you use any filtering devices!)</p>
-    </ul>
-
-    <p class="header-contact">To make a donation:</p>
-    <ul class="contact">
-        <li>Donate Money</li>
-        <li>Donate Physical Objects</li>
-        <li>Donate Digital Files</li>
-    </ul>
-
-    <p class="header-contact">Also available:</p>
+    <div class="main-section">
+      <div id="content">
+        <h1>Contacts at the Internet Archive</h1>
+        <p class="header-contact">Internet Archive</p>
         <ul class="contact">
-            <li>Announcements</li>
-            <li>What's New at the Internet Archive</li>
-            <li>Mastodon</li>
-            <li>Twitter</li>
-            <li>Facebook</li>
+          <li>300 Funston Avenue</li>
+          <li>San Francisco, CA 94118</li>
+          <li>
+            Tel: 415-561-6767 (administrative office line, see below for
+            technical questions)
+          </li>
+          <li>Fax: 415-840-0391</li>
+          <li>
+            Tours and Open most Friday afternoons 1:15pm and by appointment.
+          </li>
+          <li><a href="">directions to SF location</a></li>
+          <li><a href="">directions to Richmond location</a></li>
+        </ul>
+
+        <p class="header-contact">If you have questions, please check our:</p>
+        <ul class="contact">
+          <li><a href="">Help Center</a></li>
+          <li><a href="">Forums</a></li>
+          <li><a href="">Developer Portal</a></li>
+          <li class="contact-para">
+            If you cannot find your answer in the resources above, please email
+            <a href="">info@archive.org</a>
+          </li>
+          <li>
+            (Please enable email from @archive.org if you use any filtering
+            devices!)
+          </li>
+        </ul>
+
+        <p class="header-contact">To make a donation:</p>
+        <ul class="contact">
+          <li><a href="">Donate Money</a></li>
+          <li><a href="">Donate Physical Objects</a></li>
+          <li><a href="">Donate Digital Files</a></li>
+        </ul>
+
+        <p class="header-contact">Also available:</p>
+        <ul class="contact">
+          <li><a href="">Announcements</a></li>
+          <li><a href="">What's New at the Internet Archive</a></li>
+          <li><a href="">Mastodon</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Facebook</a></li>
         </ul>
 
         <p class="header-contact">Parking:</p>
-        <p class="contact-para">There are free, 2-hour street parking spots on Funston and the surrounding streets as well as metered parking on Clement. For a map of all-day, paid lots in the area: Parking Map</p>
-        <img id="about-photo" src="images/contact-photo.png" width="500" height="600">
+        <p class="contact-para">
+          There are free, 2-hour street parking spots on Funston and the
+          surrounding streets as well as metered parking on Clement. For a map
+          of all-day, paid lots in the area: <a href="">Parking Map</a>
+        </p>
+        <img
+          id="about-photo"
+          src="images/contact-photo.png"
+          width="500"
+          height="600"
+          alt=""
+        />
 
         <h2>Directions to the Internet Archive</h2>
         <ul class="contact">
-            <li>Mass Transit Within San Francisco</li>
-            <li>By Car From the North Bay</li>
-            <li>By Car From the East Bay</li>
-            <li>By Car From the East Bay</li>
-            <li>By Car From the South Bay via 101</li>
+          <li><a href=""> Mass Transit Within San Francisco </a></li>
+          <li>
+            <a href=""> By Car From the North Bay </a>
+          </li>
+          <li>
+            <a href=""> By Car From the East Bay </a>
+          </li>
+          <li>
+            <a href=""> By Car From the East Bay </a>
+          </li>
+          <li>
+            <a href=""> By Car From the South Bay via 101 </a>
+          </li>
         </ul>
 
         <p class="header-contact">Mass Transit Within San Francisco</p>
-        <p class="contact-para">Our area is served by San Francisco MUNI bus routes. The following links listed below will take you to the different MUNI routes; please select the most convenient route, click to see the schedule & map. 511 Trip Planner is also a useful resource</p>
-        <p class="contact-para">1 - California: Inbound toward Downtown. Outbound toward Richmond district. Board at Davis St & Pine St. Ask the driver to let you off at the corner of California St. & Park Presidio Blvd. Turn left on Park Presidio Blvd. toward Geary Blvd. Turn left at Clement St., turn right at Funston Ave. Destination will be on the left.</p>
-        <p class="contact-para">1AX - California 'A' Express: Inbound toward Financial district for morning rush hour. Outbound toward Outer Richmond district for afternoon rush hour. Get off at the corner of California St. & Park Presidio Blvd. Turn left on Park Presidio Blvd. toward Geary Blvd. Turn left at Clement St., turn right at Funston Ave. Destination will be on the left.</p>
-        <p class="contact-para">1BX - California 'B' Express: Inbound toward Financial district for morning rush hour. Outbound toward Outer Richmond district for afternoon rush hour. Get off at the corner of California St. & Park Presidio Blvd. Turn left on Park Presidio Blvd. toward Geary Blvd. Turn left at Clement St., turn right at Funston Ave. Destination will be on the left.</p>
-        <p class="contact-para">38R - Geary Rapid: (same directions as a Route 38, but this route has limited bus stops, and it is faster). Ask the driver to let you off at the corner of Geary Blvd. & Park Presidio Blvd. Head east on Geary (towards downtown) and turn left at Funston Ave. Destination will be at the end of the block on the right.</p>
-        <p class="contact-para">38 - Geary: Ask the driver to let you off at the corner of Geary Blvd. & Park Presidio Blvd. Head east on Geary (towards downtown) and turn left at Funston Ave. Destination will be at the end of the block on the right.</p>
-        <p class="contact-para">28 - 19th Ave: Ask the driver to let you off at the corner of Geary Blvd. & Park Presidio Blvd. Head east on Geary (towards downtown) and turn left at Funston Ave. Destination will be at the end of the block on the right.</p>
-        <p class="contact-para">From the south bay on CalTrain: Board the bus route #30 on Townsend St. & 4th St. Depart at 3rd St. & Market St. Then board bus route # 38 or #38R on Geary Blvd & Kearny St. Ask the driver to let you off at the corner of Geary Blvd & Park Presidio Blvd. Head east on Geary (towards downtown) and turn left at Funston Ave. Destination will be at the end of the block on the right.</p>
-        <p class="contact-para">From BART, get off at Montgomery Street station and take the 38 Geary (see above)</p>
+        <p class="contact-para">
+          Our area is served by San Francisco <a href="">MUNI</a> bus routes.
+          The following links listed below will take you to the different MUNI
+          routes; please select the most convenient route, click to see the
+          schedule & map. <a href="">511 Trip Planner</a> is also a useful
+          resource
+        </p>
+        <p class="contact-para">
+          <a href="">1 - California:</a> Inbound toward Downtown. Outbound
+          toward Richmond district. Board at Davis St & Pine St. Ask the driver
+          to let you off at the corner of California St. & Park Presidio Blvd.
+          Turn left on Park Presidio Blvd. toward Geary Blvd. Turn left at
+          Clement St., turn right at Funston Ave. Destination will be on the
+          left.
+        </p>
+        <p class="contact-para">
+          <a href="">1AX - California 'A' Express:</a> Inbound toward Financial
+          district for morning rush hour. Outbound toward Outer Richmond
+          district for afternoon rush hour. Get off at the corner of California
+          St. & Park Presidio Blvd. Turn left on Park Presidio Blvd. toward
+          Geary Blvd. Turn left at Clement St., turn right at Funston Ave.
+          Destination will be on the left.
+        </p>
+        <p class="contact-para">
+          <a href="">1BX - California 'B' Express:</a> Inbound toward Financial
+          district for morning rush hour. Outbound toward Outer Richmond
+          district for afternoon rush hour. Get off at the corner of California
+          St. & Park Presidio Blvd. Turn left on Park Presidio Blvd. toward
+          Geary Blvd. Turn left at Clement St., turn right at Funston Ave.
+          Destination will be on the left.
+        </p>
+        <p class="contact-para">
+          <a href="">38R - Geary Rapid:</a> (same directions as a Route 38, but
+          this route has limited bus stops, and it is faster). Ask the driver to
+          let you off at the corner of Geary Blvd. & Park Presidio Blvd. Head
+          east on Geary (towards downtown) and turn left at Funston Ave.
+          Destination will be at the end of the block on the right.
+        </p>
+        <p class="contact-para">
+          <a href="">38 - Geary:</a> Ask the driver to let you off at the corner
+          of Geary Blvd. & Park Presidio Blvd. Head east on Geary (towards
+          downtown) and turn left at Funston Ave. Destination will be at the end
+          of the block on the right.
+        </p>
+        <p class="contact-para">
+          <a href="">28 - 19th Ave:</a> Ask the driver to let you off at the
+          corner of Geary Blvd. & Park Presidio Blvd. Head east on Geary
+          (towards downtown) and turn left at Funston Ave. Destination will be
+          at the end of the block on the right.
+        </p>
+        <p class="contact-para">
+          From the south bay on <a href="">CalTrain:</a> Board the bus route #30
+          on Townsend St. & 4th St. Depart at 3rd St. & Market St. Then board
+          bus route # 38 or #38R on Geary Blvd & Kearny St. Ask the driver to
+          let you off at the corner of Geary Blvd & Park Presidio Blvd. Head
+          east on Geary (towards downtown) and turn left at Funston Ave.
+          Destination will be at the end of the block on the right.
+        </p>
+        <p class="contact-para">
+          From <a href="">BART</a>, get off at Montgomery Street station and
+          take the 38 Geary (see above)
+        </p>
 
         <p class="header-contact">Driving From the North Bay</p>
         <ul class="contact">
-            <li>Take highway US-101 South across Golden Gate Bridge (Toll applies).</li>
-            <li>Continue on US-101 south, go 0.3 miles.</li>
-            <li>Take the 19th Ave. /Golden Gate Park exit onto CA-1 South, go 1.3 miles</li>
-            <li>Turn Right on Lake St.</li>
-            <li>Turn Left on 14TH Ave, go 0.3 miles</li>
-            <li>Turn Left on Clement St, go 0.1 miles</li>
-            <li>Turn Right on Funston Ave.</li>
-            <li>Arrive at 300 Funston Ave, San Francisco, on the Left</li>
+          <li>
+            Take highway US-101 South across Golden Gate Bridge (Toll applies).
+          </li>
+          <li>Continue on US-101 south, go 0.3 miles.</li>
+          <li>
+            Take the 19th Ave. /Golden Gate Park exit onto CA-1 South, go 1.3
+            miles
+          </li>
+          <li>Turn Right on Lake St.</li>
+          <li>Turn Left on 14TH Ave, go 0.3 miles</li>
+          <li>Turn Left on Clement St, go 0.1 miles</li>
+          <li>Turn Right on Funston Ave.</li>
+          <li>Arrive at 300 Funston Ave, San Francisco, on the Left</li>
         </ul>
-        <p class="contact-para">There is metered parking on Clement and 2-hour parking on Funston and parallel avenues (please also note street cleaning times).</p>
-   
+        <p class="contact-para">
+          There is metered parking on Clement and 2-hour parking on Funston and
+          parallel avenues (please also note street cleaning times).
+        </p>
 
         <p class="header-contact">Driving From the East Bay</p>
         <ul class="contact">
-            <li>Take Interstate 80 west over the Bay Bridge.</li>
-            <li>Take the Golden Gate Bridge exit onto US-101 North, go 1.1 miles</li>
-            <li>Continue on Octavia Blvd, go 0.30 miles</li>
-            <li>Turn Left on Fell St, go 0.6 miles</li>
-            <li>Turn Right on Scott Ave, go 0.1 miles</li>
-            <li>Turn Left on Hayes St, go 0.1 miles</li>
-            <li>Turn Right on Divisadero Ave, go 0.6 miles</li>
-            <li>Turn Left on Geary Blvd, go 1.8 miles</li>
-            <li>Turn Left on Geary Blvd, go 1.8 miles</li>
-            <li>Arrive at 300 Funston Ave. San Francisco, on the Right</li>
+          <li>Take Interstate 80 west over the Bay Bridge.</li>
+          <li>
+            Take the Golden Gate Bridge exit onto US-101 North, go 1.1 miles
+          </li>
+          <li>Continue on Octavia Blvd, go 0.30 miles</li>
+          <li>Turn Left on Fell St, go 0.6 miles</li>
+          <li>Turn Right on Scott Ave, go 0.1 miles</li>
+          <li>Turn Left on Hayes St, go 0.1 miles</li>
+          <li>Turn Right on Divisadero Ave, go 0.6 miles</li>
+          <li>Turn Left on Geary Blvd, go 1.8 miles</li>
+          <li>Turn Left on Geary Blvd, go 1.8 miles</li>
+          <li>Arrive at 300 Funston Ave. San Francisco, on the Right</li>
         </ul>
-        <p class="contact-para">There is metered parking on Clement and 2-hour parking on Funston and parallel avenues (please also note street cleaning times).</p>
+        <p class="contact-para">
+          There is metered parking on Clement and 2-hour parking on Funston and
+          parallel avenues (please also note street cleaning times).
+        </p>
 
         <p class="header-contact">From the South Bay via Highway 280</p>
         <ul class="contact">
-            <li>Take Interstate 280 north to San Francisco</li>
-            <li>When Interstate 280 splits into Route 1 and 280, veer left, onto Highway 1 (19th Avenue).</li>
-            <li>Follow Highway 1 (19th Avenue) north across San Francisco and through Golden Gate Park.</li>
-            <li>Turn Right on Clement St.</li>
-            <li>Turn Right on Funston Ave.</li>
-            <li>Arrive at 300 Funston Ave. San Francisco on the Left</li>
+          <li>Take Interstate 280 north to San Francisco</li>
+          <li>
+            When Interstate 280 splits into Route 1 and 280, veer left, onto
+            Highway 1 (19th Avenue).
+          </li>
+          <li>
+            Follow Highway 1 (19th Avenue) north across San Francisco and
+            through Golden Gate Park.
+          </li>
+          <li>Turn Right on Clement St.</li>
+          <li>Turn Right on Funston Ave.</li>
+          <li>Arrive at 300 Funston Ave. San Francisco on the Left</li>
         </ul>
-        <p class="contact-para">There is metered parking on Clement and 2-hour parking on Funston and parallel avenues (please also note street cleaning times).</p>
+        <p class="contact-para">
+          There is metered parking on Clement and 2-hour parking on Funston and
+          parallel avenues (please also note street cleaning times).
+        </p>
 
         <p class="header-contact">From the South Bay via Highway 101</p>
         <ul class="contact">
-            <li>When Highway 101 splits into the Highway 80/Bay Bridge and Highway 101/Golden Gate Bridge approaches, veer left, onto Highway 101.</li>
-            <li>Follow the 101 north/Golden Gate Bridge turnoff</li>
-            <li>Continue on Octavia Blvd, go 0.3 Miles.</li>
-            <li>Turn Left on Fell St, go 0.6 miles</li>
-            <li>Turn Right on Scott Ave, go 0.1 miles</li>
-            <li>Turn Left on Hayes St, go 0.1 miles</li>
-            <li>Turn Right on Divisadero Ave, go 0.6 miles</li>
-            <li>Turn Left on Geary Blvd, go 1.8 miles</li>
-            <li>Turn Right on Funston Ave, go 0.1 miles</li>
-            <li>Arrive at 300 Funston Ave. San Francisco, on the Right</li>
+          <li>
+            When Highway 101 splits into the Highway 80/Bay Bridge and Highway
+            101/Golden Gate Bridge approaches, veer left, onto Highway 101.
+          </li>
+          <li>Follow the 101 north/Golden Gate Bridge turnoff</li>
+          <li>Continue on Octavia Blvd, go 0.3 Miles.</li>
+          <li>Turn Left on Fell St, go 0.6 miles</li>
+          <li>Turn Right on Scott Ave, go 0.1 miles</li>
+          <li>Turn Left on Hayes St, go 0.1 miles</li>
+          <li>Turn Right on Divisadero Ave, go 0.6 miles</li>
+          <li>Turn Left on Geary Blvd, go 1.8 miles</li>
+          <li>Turn Right on Funston Ave, go 0.1 miles</li>
+          <li>Arrive at 300 Funston Ave. San Francisco, on the Right</li>
         </ul>
-        <p class="contact-para">There is metered parking on Clement and 2-hour parking on Funston and parallel avenues (please also note street cleaning times).</p>
-    
+        <p class="contact-para">
+          There is metered parking on Clement and 2-hour parking on Funston and
+          parallel avenues (please also note street cleaning times).
+        </p>
+
         <h3>Other Contacts</h3>
         <ul class="contact">
-            <li>Frequently Asked Questions</li>
-            <li>Information on adding your site to the Internet Archive Wayback Machine.</li>
-            <li>Privacy Policy Questions or Comments</li>
-            <li>Job Opportunities at the Internet Archive</li>
-            <li>Press Inquiries</li>
-            <li>Make a Monetary Donation</li>
-            <li>Bands: Give permission to archive your shows</li>
-            <li>User Forums</li>
+          <li>Frequently Asked Questions</li>
+          <li>
+            Information on adding your site to the Internet Archive Wayback
+            Machine.
+          </li>
+          <li>Privacy Policy Questions or Comments</li>
+          <li>Job Opportunities at the Internet Archive</li>
+          <li>Press Inquiries</li>
+          <li>Make a Monetary Donation</li>
+          <li>Bands: Give permission to archive your shows</li>
+          <li>User Forums</li>
         </ul>
+      </div>
+    </div>
 
     <footer>
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="help.html">Help</a></li>
-            <li><a href="donate.html">Donate</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="jobs.html">Jobs</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
-            <li><a href="people.html">People</a></li>
-        </ul>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="people.html">People</a></li>
+      </ul>
     </footer>
-</body>
-
+  </body>
 </html>

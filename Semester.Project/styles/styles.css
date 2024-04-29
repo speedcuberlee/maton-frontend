@@ -1,0 +1,232 @@
+/* Reset CSS styles */
+* {
+  font-family: Poppins, Helvetica, sans-serif; /* Set font family */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Use border-box box model */
+}
+
+/* Hide scrollbar on HTML element */
+html {
+  overflow: hidden; /* Hide scrollbar on HTML element */
+}
+
+/* Style body element */
+body {
+  color: #fff; /* Set text color to white */
+  display: flex; /* Use flexbox layout */
+  min-height: 100vh; /* Set minimum height to full viewport height */
+  max-height: 100%; /* Set maximum height to full viewport height */
+  flex-direction: column; /* Set flex direction to column */
+}
+
+/* Style anchor tags */
+a {
+  color: cyan; /* Set link color to cyan */
+}
+
+/* Style background element */
+.background {
+  position: absolute; /* Position background absolutely */
+  top: 0; /* Set top position to 0 */
+  left: 0; /* Set left position to 0 */
+  width: 100%; /* Set width to full viewport width */
+  min-height: 100vh; /* Set minimum height to full viewport height */
+  background-image: url(../images/cybernet-background-1.jpg); /* Set background image */
+  background-position: center; /* Center background image */
+  background-size: cover; /* Cover entire background with image */
+  background-repeat: no-repeat; /* Do not repeat background image */
+  z-index: -1; /* Set z-index to -1 to send background behind other elements */
+  filter: blur(10px); /* Apply blur filter to background */
+}
+
+/* Style logo photo */
+#logo-photo {
+  -webkit-background-clip: text; /* Clip background to text */
+  background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Make text transparent */
+}
+
+/* Style logo link */
+.logo a {
+  text-decoration: none; /* Remove underline from link */
+  background: linear-gradient(
+    30deg,
+    #05923b,
+    #1af806
+  ); /* Set gradient background */
+  font-size: 35px; /* Set font size to 35px */
+  font-weight: 600; /* Set font weight to 600 */
+  text-align: center; /* Center align text */
+  -webkit-background-clip: text; /* Clip background to text */
+  background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Make text transparent */
+}
+
+/* Style user navigation bar */
+.user-navbar {
+  background-color: #0000df; /* Set background color to dark blue */
+  padding-right: 15px; /* Add padding to right side */
+  padding-left: 15px; /* Add padding to left side */
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Center align items vertically */
+  justify-content: space-evenly; /* Distribute items evenly */
+}
+
+/* Style user navigation bar list items */
+.user-navbar li {
+  list-style: none; /* Remove bullet points */
+  display: inline-block; /* Display list items inline */
+}
+
+/* Style user navigation bar links */
+.user-navbar li a {
+  color: #fff; /* Set link color to white */
+  font-size: 15px; /* Set font size to 15px */
+  font-weight: bold; /* Set font weight to bold */
+}
+
+/* Style user navigation bar button */
+.user-navbar li {
+  text-align: center; /* Center align text */
+  background-color: #000; /* Set background color to black */
+  margin-left: 10px; /* Add margin to left side */
+  border-radius: 10px; /* Add border radius */
+  padding: 10px; /* Add padding */
+  width: 90px; /* Set width to 90px */
+  box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5); /* Add box shadow */
+  transition: box-shadow 0.3s ease; /* Add transition effect */
+}
+
+/* Style user navigation bar button on hover */
+.user-navbar li:hover {
+  transform: translateY(5px); /* Move button down on hover */
+  box-shadow: 0 0 0 0 black; /* Remove box shadow on hover */
+}
+
+/* Style footer */
+footer {
+  margin-top: auto; /* Set margin top to auto */
+}
+
+/* Style footer list */
+footer ul {
+  display: flex; /* Use flexbox layout */
+  background-color: #0000df; /* Set background color to dark blue */
+  justify-content: space-evenly; /* Distribute items evenly */
+  list-style-type: none; /* Remove bullet points */
+}
+
+/* Style footer links */
+footer li a {
+  color: #fff; /* Set link color to white */
+  background-color: transparent; /* Set background color to transparent */
+  text-decoration: none; /* Remove underline from link */
+}
+
+/* Style main section */
+.main-section {
+  display: flex; /* Use flexbox layout */
+  flex-direction: row; /* Set flex direction to row */
+  height: calc(
+    100vh - 146px
+  ); /* Set height to full viewport height minus 146px */
+}
+
+/* Hide scrollbar on content element */
+#content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Style content element */
+#content {
+  overflow: scroll; /* Add scrollbar */
+  width: 100%; /* Set width to full viewport width */
+  -ms-overflow-style: none; /* Hide scrollbar on IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar on Firefox */
+}
+
+/* Style about photo */
+#about-photo {
+  margin: 0 auto; /* Center align horizontally */
+  margin-top: 1%; /* Add margin top */
+  display: flex; /* Use flexbox layout */
+  overflow: scroll; /* Add scrollbar */
+}
+
+#content h1,
+h2 {
+  text-align: center; /* Center align text */
+}
+
+/* Style paragraph element */
+.para {
+  text-align: left; /* Left align text */
+  width: 80%; /* Set width to 80% */
+  margin-left: 10%; /* Add margin left */
+  margin-top: 2%; /* Add margin top */
+  top: 90%; /* Set top position to 90% */
+  font-size: 19px; /* Set font size to 19px */
+}
+
+/* Style other elements */
+.volunteer,
+.people,
+.jobs,
+.donate {
+  width: 80%; /* Set width to 80% */
+  margin: 0 auto; /* Center align horizontally */
+}
+
+.volunteer p,
+.people p,
+.jobs p,
+.donate p {
+  font-size: 19px; /* Set font size to 19px */
+}
+
+/* Style list elements */
+.amount-of-pages li,
+.members li,
+.workshop-talks li,
+.key-areas li,
+.initial-signing li,
+.foundations li,
+.options li,
+.stories li {
+  margin-left: 5%; /* Add margin left */
+  margin-top: 1%; /* Add margin top */
+  margin-bottom: 1%; /* Add margin bottom */
+  font-size: 19px; /* Set font size to 19px */
+}
+
+/* Style header element */
+.header {
+  margin-top: 2%; /* Add margin top */
+  text-align: center; /* Center align text */
+  font-size: 25px; /* Set font size to 25px */
+}
+
+/* Style contact paragraph */
+.contact-para {
+  margin-top: 1%; /* Add margin top */
+  margin-bottom: 1%; /* Add margin bottom */
+  margin-left: 5%; /* Add margin left */
+  font-size: 19px; /* Set font size to 19px */
+  width: 80%; /* Set width to 80% */
+}
+
+/* Style contact list */
+.contact li {
+  margin-top: 2%; /* Add margin top */
+  list-style: none; /* Remove bullet points */
+  margin-left: 5%; /* Add margin left */
+  font-size: 19px; /* Set font size to 19px */
+}
+
+/* Style header contact */
+.header-contact {
+  margin-left: 5%; /* Add margin left */
+  margin-top: 2%; /* Add margin top */
+  font-size: 25px; /* Set font size to 25px */
+}

@@ -1,0 +1,85 @@
+/* Donate menu styles */
+.donate-menu {
+  background: transparent;
+  /* Make background transparent */
+  width: 600px;
+  /* Set width to 600px */
+  overflow: auto;
+  /* Allow vertical scrolling if content exceeds height */
+  padding: 0 24px;
+  /* Add padding to left and right sides */
+}
+
+/* Selection button styles */
+.selection-button {
+  width: max-content;
+  /* Set width to content's width */
+  margin: 12px;
+  /* Add margin to top and bottom */
+}
+
+/* Selection menu styles */
+.selection-menu {
+  display: flex;
+  /* Display as flex container */
+  width: max-content;
+  /* Set width to content's width */
+  padding: 12px;
+  /* Add padding to all sides */
+}
+
+/* Hide radio buttons */
+.selection-button input[type="radio"] {
+  display: none;
+  /* Hide radio buttons */
+}
+
+/* Style text inputs */
+.selection-button input[type="text"] {
+  background: none;
+  /* Remove background */
+  border: none;
+  /* Remove border */
+  outline: none;
+  /* Remove outline on focus */
+  color: white;
+  /* Set text color to white */
+}
+
+/* Style labels */
+.selection-button label {
+  padding: 12px;
+  /* Add padding to all sides */
+  background: green;
+  /* Set background color to green */
+  font-weight: bold;
+  /* Set font weight to bold */
+}
+
+/* Change label background color when radio button is checked */
+.selection-button input[type="radio"]:checked+label {
+  background: #0000df;
+  /* Change label background color to #0000df when radio button is checked */
+}
+
+.custom-amount-button-class {
+  display: flex;
+  /* Display as flex container */
+  justify-content: center;
+  /* Center content horizontally */
+  background-color: green;
+  /* Set background color to green */
+}
+
+/* Custom amount input styles */
+#custom-amount-input {
+  width: 100px;
+  /* Set width to 100px */
+  font-size: 20px;
+  /* Set font size to 20px */
+}
+
+#custom-amount-input-hide {
+  display: none;
+  /* Hide input field */
+}

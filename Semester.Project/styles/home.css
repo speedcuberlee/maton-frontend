@@ -1,0 +1,13 @@
+/* Body styles */
+body {
+  /* Set background image to cybernet-background-1.jpg */
+  background-image: url(../images/cybernet-background-1.jpg);
+  /* Center the background image horizontally */
+  background-position: center;
+  /* Scale the background image to cover the entire area */
+  background-size: cover;
+  /* Prevent the background image from repeating */
+  background-repeat: no-repeat;
+  /* Set minimum width to 800px */
+  min-width: 800px;
+}

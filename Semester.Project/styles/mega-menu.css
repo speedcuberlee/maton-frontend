@@ -1,0 +1,305 @@
+/* Main navbar styles */
+.main-navbar {
+  /* Set background color to #0000df */
+  background: #0000df;
+  /* Commented out: add a box shadow effect */
+  /* box-shadow: 0 0 15px 0 rgba(0,0,0,.10); */
+}
+
+/* Main navbar unordered list styles */
+.main-navbar ul {
+  /* Remove margin and padding */
+  margin: 0;
+  padding: 0;
+  /* Remove list style */
+  list-style: none;
+  /* Set position to relative */
+  position: relative;
+  /* Commented out: align text to the left */
+  /* text-align: left; */
+}
+
+/* Main navbar list item styles */
+.main-navbar li {
+  /* Display as an inline block */
+  display: inline-block;
+}
+
+/* Main navbar anchor styles */
+.main-navbar a {
+  /* Set text color to white */
+  color: #fff;
+  /* Remove text decoration */
+  text-decoration: none;
+  /* Display as a block */
+  display: block;
+  /* Add padding */
+  padding: .75em 1.75em;
+}
+
+/* Main navbar hover styles */
+.main-navbar li:hover {
+  /* Set background color to rgb(28, 28, 221) */
+  background: rgb(28, 28, 221);
+}
+
+.main-navbar a:hover {
+  /* Set text color to white */
+  color: #fff;
+}
+
+/* Menu main styles */
+.menu-main {
+  /* Justify content evenly */
+  justify-content: space-evenly;
+}
+
+/* Menu sub styles */
+.menu-sub {
+  /* Set position to absolute */
+  position: absolute;
+  /* Set background color to #444 */
+  background: #444;
+  /* Set width to 50% */
+  width: 50%;
+  /* Hide by default */
+  display: none;
+  /* Set text color to white */
+  color: #fff;
+}
+
+/* Show menu sub on hover */
+nav li:hover .menu-sub {
+  /* Display block */
+  display: block;
+}
+
+/* Menu sub list item styles */
+.menu-sub li {
+  /* Display as a block */
+  display: block;
+}
+
+/* Menu sub anchor styles */
+.menu-sub a {
+  /* Remove padding */
+  padding: 0;
+  /* Add margin bottom */
+  margin-bottom: .35em;
+}
+
+/* Menu category styles */
+.menu-category {
+  /* Add margin top and bottom */
+  margin: 2.5em 0 .5em;
+}
+
+.menu-sub a:hover {
+  /* Underline text on hover */
+  text-decoration: underline;
+}
+
+.menu-category:first-of-type {
+  /* Remove margin top */
+  margin-top: 0;
+}
+
+/* Menu column styles */
+.menu-col-1,
+.menu-col-2,
+.menu-col-3,
+.menu-col-4,
+.menu-col-5,
+.menu-col-6 {
+  /* Float left */
+  float: left;
+}
+
+.menu-col-1 {
+  /* Set width to 25% */
+  width: 25%;
+}
+
+/* Jobs list styles */
+#jobs-list li {
+  /* Remove list style */
+  list-style: none;
+}
+
+/* Fieldset styles */
+fieldset {
+  /* Remove border */
+  border: none;
+}
+
+/* Mega image styles */
+.mega-image {
+  /* Display as a block */
+  display: block;
+  /* Set width and height to 120px */
+  width: 120px;
+  height: 120px;
+  /* Add border radius */
+  border-radius: 60px;
+}
+
+/* Wrapper styles */
+.wrapper {
+  /* Set position to relative */
+  position: relative;
+  /* Commented out: set max width to 1300px */
+  /* max-width: 1300px; */
+  /* Add padding */
+  padding: 0 30px;
+  /* Set height to 70px */
+  height: 70px;
+  /* Commented out: set margin to auto */
+  /* margin: auto; */
+  /* Display as a flex container */
+  display: flex;
+  /* Align items to the center */
+  align-items: center;
+  /* Justify content to the space between */
+  justify-content: space-between;
+  /* Set background color to #0000df */
+  background-color: #0000df;
+}
+
+/* Nav links styles */
+.nav-links {
+  /* Display as a flex container */
+  display: flex;
+}
+
+.nav-links li {
+  /* Remove list style */
+  list-style: none;
+}
+
+.nav-links li a {
+  /* Set text color to white */
+  color: #fff;
+  /* Remove text decoration */
+  text-decoration: none;
+  /* Set font size to 18px */
+  font-size: 18px;
+  /* Set font weight to 500 */
+  font-weight: 500;
+  /* Add padding */
+  padding: 9px 15px;
+  /* Add border radius */
+  border-radius: 5px;
+  /* Add transition effect */
+  transition: all 0.4s ease;
+}
+
+.nav-links li a:hover {
+  /* Set background color to #10e3ff */
+  background: #10e3ff;
+}
+
+/* Mega box styles */
+.mega-box {
+  /* Set position to absolute */
+  position: absolute;
+  /* Set left to 0 */
+  left: 0;
+  /* Set width to 100% */
+  width: 100%;
+  /* Add padding */
+  padding: 0 30px;
+  /* Set top to 100px */
+  top: 100px;
+  /* Set opacity to 0 */
+  opacity: 0;
+  /* Set visibility to hidden */
+  visibility: hidden;
+}
+
+.nav-links li:hover .mega-box {
+  /* Add transition effect */
+  transition: all 0.7s;
+  /* Set top to 54px */
+  top: 54px;
+  /* Set opacity to 1 */
+  opacity: 1;
+  /* Set visibility to visible */
+  visibility: visible;
+}
+
+/* Content styles */
+.content {
+  /* Set background color to #0000df */
+  background: #0000df;
+  /* Add border radius */
+  border-radius: 10px;
+  /* Add padding */
+  padding: 25px 40px;
+  /* Display as a flex container */
+  display: flex;
+  /* Set width to 100% */
+  width: 100%;
+  /* Justify content to the space between */
+  justify-content: space-between;
+}
+
+/* Main styles */
+.main {
+  /* Set width to 25% */
+  width: 25%;
+  /* Set line height to 45px */
+  line-height: 45px;
+}
+
+.main p {
+  /* Set text color to white */
+  color: #fff;
+  /* Set font size to 20px */
+  font-size: 20px;
+  /* Set font weight to bold */
+  font-weight: bold;
+  /* Set width to 80% */
+  width: 80%;
+}
+
+/* Mega links styles */
+.mega-links {
+  /* Add margin left */
+  margin-left: -42px;
+  /* Add border left */
+  border-left: 1px solid #fff;
+}
+
+.mega-links li {
+  /* Add padding */
+  padding: 0 20px;
+}
+
+.mega-links li a {
+  /* Add padding */
+  padding: 0 20px;
+  /* Set text color to #d9d9d9 */
+  color: #d9d9d9;
+  /* Set font size to 17px */
+  font-size: 17px;
+  /* Set width to 80% */
+  width: 80%;
+}
+
+.main .mega-links li {
+  /* Add padding */
+  padding: 0 20px;
+}
+
+.main .mega-links li a {
+  /* Add padding */
+  padding: 0 20px;
+  /* Set text color to #d9d9d9 */
+  color: #d9d9d9;
+  /* Set font size to 17px */
+  font-size: 17px;
+  /* Display as an inline block */
+  display: inline-block;
+  /* Set width to 80% */
+  width: 80%;
+}
